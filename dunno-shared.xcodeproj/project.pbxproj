@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3F568B418D769E500126A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B318D769E500126A3C /* Foundation.framework */; };
+		C3F568C218D769E500126A3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568C118D769E500126A3C /* XCTest.framework */; };
+		C3F568C318D769E500126A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B318D769E500126A3C /* Foundation.framework */; };
+		C3F568C518D769E500126A3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568C418D769E500126A3C /* UIKit.framework */; };
+		C3F568C818D769E500126A3C /* libdunno-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B018D769E500126A3C /* libdunno-shared.a */; };
+		C3F568CE18D769E500126A3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F568CC18D769E500126A3C /* InfoPlist.strings */; };
+		C3F568E518D76AB800126A3C /* DUNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F568E218D76AB800126A3C /* DUNUser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3F568C618D769E500126A3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3F568A818D769E500126A3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3F568AF18D769E500126A3C;
+			remoteInfo = "dunno-shared";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C3F568AE18D769E500126A3C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C3F568B018D769E500126A3C /* libdunno-shared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdunno-shared.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F568B318D769E500126A3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C3F568B718D769E500126A3C /* dunno-shared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dunno-shared-Prefix.pch"; sourceTree = "<group>"; };
+		C3F568C018D769E500126A3C /* dunno-sharedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dunno-sharedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3F568C118D769E500126A3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C3F568C418D769E500126A3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C3F568CB18D769E500126A3C /* dunno-sharedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dunno-sharedTests-Info.plist"; sourceTree = "<group>"; };
+		C3F568CD18D769E500126A3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C3F568E118D76AB800126A3C /* DUNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNUser.h; sourceTree = "<group>"; };
+		C3F568E218D76AB800126A3C /* DUNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNUser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3F568AD18D769E500126A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F568B418D769E500126A3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F568BD18D769E500126A3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F568C218D769E500126A3C /* XCTest.framework in Frameworks */,
+				C3F568C518D769E500126A3C /* UIKit.framework in Frameworks */,
+				C3F568C318D769E500126A3C /* Foundation.framework in Frameworks */,
+				C3F568C818D769E500126A3C /* libdunno-shared.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3F568A718D769E500126A3C = {
+			isa = PBXGroup;
+			children = (
+				C3F568B518D769E500126A3C /* dunno-shared */,
+				C3F568C918D769E500126A3C /* dunno-sharedTests */,
+				C3F568B218D769E500126A3C /* Frameworks */,
+				C3F568B118D769E500126A3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3F568B118D769E500126A3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3F568B018D769E500126A3C /* libdunno-shared.a */,
+				C3F568C018D769E500126A3C /* dunno-sharedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3F568B218D769E500126A3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3F568B318D769E500126A3C /* Foundation.framework */,
+				C3F568C118D769E500126A3C /* XCTest.framework */,
+				C3F568C418D769E500126A3C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3F568B518D769E500126A3C /* dunno-shared */ = {
+			isa = PBXGroup;
+			children = (
+				C3F568D918D76A6E00126A3C /* Models */,
+				C3F568B618D769E500126A3C /* Supporting Files */,
+			);
+			path = "dunno-shared";
+			sourceTree = "<group>";
+		};
+		C3F568B618D769E500126A3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F568B718D769E500126A3C /* dunno-shared-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3F568C918D769E500126A3C /* dunno-sharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3F568CA18D769E500126A3C /* Supporting Files */,
+			);
+			path = "dunno-sharedTests";
+			sourceTree = "<group>";
+		};
+		C3F568CA18D769E500126A3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C3F568CB18D769E500126A3C /* dunno-sharedTests-Info.plist */,
+				C3F568CC18D769E500126A3C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C3F568D918D76A6E00126A3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3F568E118D76AB800126A3C /* DUNUser.h */,
+				C3F568E218D76AB800126A3C /* DUNUser.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3F568AF18D769E500126A3C /* dunno-shared */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F568D318D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-shared" */;
+			buildPhases = (
+				C3F568AC18D769E500126A3C /* Sources */,
+				C3F568AD18D769E500126A3C /* Frameworks */,
+				C3F568AE18D769E500126A3C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dunno-shared";
+			productName = "dunno-shared";
+			productReference = C3F568B018D769E500126A3C /* libdunno-shared.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C3F568BF18D769E500126A3C /* dunno-sharedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3F568D618D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-sharedTests" */;
+			buildPhases = (
+				C3F568BC18D769E500126A3C /* Sources */,
+				C3F568BD18D769E500126A3C /* Frameworks */,
+				C3F568BE18D769E500126A3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3F568C718D769E500126A3C /* PBXTargetDependency */,
+			);
+			name = "dunno-sharedTests";
+			productName = "dunno-sharedTests";
+			productReference = C3F568C018D769E500126A3C /* dunno-sharedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3F568A818D769E500126A3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = dunno;
+			};
+			buildConfigurationList = C3F568AB18D769E500126A3C /* Build configuration list for PBXProject "dunno-shared" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C3F568A718D769E500126A3C;
+			productRefGroup = C3F568B118D769E500126A3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3F568AF18D769E500126A3C /* dunno-shared */,
+				C3F568BF18D769E500126A3C /* dunno-sharedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3F568BE18D769E500126A3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F568CE18D769E500126A3C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3F568AC18D769E500126A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3F568E518D76AB800126A3C /* DUNUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3F568BC18D769E500126A3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3F568C718D769E500126A3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3F568AF18D769E500126A3C /* dunno-shared */;
+			targetProxy = C3F568C618D769E500126A3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3F568CC18D769E500126A3C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3F568CD18D769E500126A3C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3F568D118D769E500126A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C3F568D218D769E500126A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3F568D418D769E500126A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/dunno_shared.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C3F568D518D769E500126A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/dunno_shared.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C3F568D718D769E500126A3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dunno-sharedTests/dunno-sharedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C3F568D818D769E500126A3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
+				INFOPLIST_FILE = "dunno-sharedTests/dunno-sharedTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3F568AB18D769E500126A3C /* Build configuration list for PBXProject "dunno-shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F568D118D769E500126A3C /* Debug */,
+				C3F568D218D769E500126A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3F568D318D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-shared" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F568D418D769E500126A3C /* Debug */,
+				C3F568D518D769E500126A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3F568D618D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-sharedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3F568D718D769E500126A3C /* Debug */,
+				C3F568D818D769E500126A3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3F568A818D769E500126A3C /* Project object */;
+}
