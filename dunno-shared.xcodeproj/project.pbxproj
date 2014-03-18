@@ -49,6 +49,7 @@
 		C3F568CD18D769E500126A3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C3F568E118D76AB800126A3C /* DUNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNUser.h; sourceTree = "<group>"; };
 		C3F568E218D76AB800126A3C /* DUNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNUser.m; sourceTree = "<group>"; };
+		C3FEB6B018D7F9B3005B9AE6 /* dunno-shared.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "dunno-shared.podspec"; path = "../dunno-shared.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 		C3F568CA18D769E500126A3C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3FEB6B018D7F9B3005B9AE6 /* dunno-shared.podspec */,
 				C3F568CB18D769E500126A3C /* dunno-sharedTests-Info.plist */,
 				C3F568CC18D769E500126A3C /* InfoPlist.strings */,
 			);
@@ -407,6 +409,7 @@
 				C3F568D518D769E500126A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3F568D618D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-sharedTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +418,7 @@
 				C3F568D818D769E500126A3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
