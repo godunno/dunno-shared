@@ -391,6 +391,7 @@
 /* Begin XCBuildConfiguration section */
 		C3F568D118D769E500126A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -428,6 +429,7 @@
 		};
 		C3F568D218D769E500126A3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -485,6 +487,7 @@
 		};
 		C3F568D718D769E500126A3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

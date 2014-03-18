@@ -1,6 +1,6 @@
 #import "JSONModel.h"
 
-@interface DUNUser : NSObject
+@interface DUNUser : JSONModel
 
 @property (nonatomic, copy) NSString *entityId;
 @property (nonatomic, copy) NSString *name;
