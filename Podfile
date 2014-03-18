@@ -1,7 +1,11 @@
 platform :ios, "7.0"
 
-target "dunno-shared" do
+inhibit_all_warnings!
 
+xcodeproj "dunno-shared"
+
+target "dunno-shared" do
+  pod 'JSONModel'
 end
 
 target "dunno-sharedTests" do

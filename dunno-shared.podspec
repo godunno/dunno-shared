@@ -5,8 +5,13 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/godunno/dunno-shared"
   s.license      = 'MIT'
   s.author       = { 'Fagner Moura' => 'fagnermoura@gmail.com' }
+  
+
   s.platform     = :ios, '7.0'
+  s.requires_arc = true
+
   s.source_files  = 'dunno-shared', 'dunno-shared/**/*.{h,m}'
   s.public_header_files = 'dunno-shared/**/*.h'
-  s.requires_arc = true
+
+  s.dependency = 'JSONModel'
 end
