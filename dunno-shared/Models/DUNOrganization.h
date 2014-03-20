@@ -6,6 +6,6 @@
 @property (nonatomic, copy) NSString *uuid;
 @property (nonatomic, copy) NSString *name;
 
-@property (nonatomic, strong) NSArray<DUNEvent> *events;
+@property (nonatomic, strong) NSArray<DUNEvent, Optional> *events;
 
 @end
