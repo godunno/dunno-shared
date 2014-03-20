@@ -17,7 +17,6 @@
 		C330421A18D8E7F800AAE7C2 /* DUNTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420518D8E7F800AAE7C2 /* DUNTopic.m */; };
 		C330421B18D8E7F800AAE7C2 /* DUNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420718D8E7F800AAE7C2 /* DUNUser.m */; };
 		C330421C18D8E7F800AAE7C2 /* DUNTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */; };
-		C330421D18D8E7F800AAE7C2 /* DUNTimelineInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420C18D8E7F800AAE7C2 /* DUNTimelineInteraction.m */; };
 		C330421E18D8E7F800AAE7C2 /* DUNTimelinePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */; };
 		C330421F18D8E7F800AAE7C2 /* DUNTimelineRating.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */; };
 		C330422018D8E7F800AAE7C2 /* DUNTimelineUserMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */; };
@@ -33,7 +32,6 @@
 		C3C04DC618DB643800919883 /* DUNTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420118D8E7F800AAE7C2 /* DUNTeacher.m */; };
 		C3C04DC718DB643800919883 /* DUNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420718D8E7F800AAE7C2 /* DUNUser.m */; };
 		C3C04DC818DB644200919883 /* DUNTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */; };
-		C3C04DC918DB644200919883 /* DUNTimelineInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420C18D8E7F800AAE7C2 /* DUNTimelineInteraction.m */; };
 		C3C04DCA18DB644200919883 /* DUNTimelinePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */; };
 		C3C04DCB18DB644200919883 /* DUNTimelineRating.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */; };
 		C3C04DCC18DB644200919883 /* DUNTimelineUserMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */; };
@@ -91,8 +89,6 @@
 		C330420718D8E7F800AAE7C2 /* DUNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNUser.m; sourceTree = "<group>"; };
 		C330420918D8E7F800AAE7C2 /* DUNTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimeline.h; sourceTree = "<group>"; };
 		C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimeline.m; sourceTree = "<group>"; };
-		C330420B18D8E7F800AAE7C2 /* DUNTimelineInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelineInteraction.h; sourceTree = "<group>"; };
-		C330420C18D8E7F800AAE7C2 /* DUNTimelineInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelineInteraction.m; sourceTree = "<group>"; };
 		C330420D18D8E7F800AAE7C2 /* DUNTimelinePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelinePoll.h; sourceTree = "<group>"; };
 		C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelinePoll.m; sourceTree = "<group>"; };
 		C330420F18D8E7F800AAE7C2 /* DUNTimelineRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelineRating.h; sourceTree = "<group>"; };
@@ -169,8 +165,6 @@
 			children = (
 				C330420918D8E7F800AAE7C2 /* DUNTimeline.h */,
 				C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */,
-				C330420B18D8E7F800AAE7C2 /* DUNTimelineInteraction.h */,
-				C330420C18D8E7F800AAE7C2 /* DUNTimelineInteraction.m */,
 				C330420D18D8E7F800AAE7C2 /* DUNTimelinePoll.h */,
 				C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */,
 				C330420F18D8E7F800AAE7C2 /* DUNTimelineRating.h */,
@@ -364,7 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C330421F18D8E7F800AAE7C2 /* DUNTimelineRating.m in Sources */,
-				C330421D18D8E7F800AAE7C2 /* DUNTimelineInteraction.m in Sources */,
 				C330421E18D8E7F800AAE7C2 /* DUNTimelinePoll.m in Sources */,
 				C330422018D8E7F800AAE7C2 /* DUNTimelineUserMessage.m in Sources */,
 				C330421818D8E7F800AAE7C2 /* DUNTeacher.m in Sources */,
@@ -392,7 +385,6 @@
 				C3C04DCA18DB644200919883 /* DUNTimelinePoll.m in Sources */,
 				C3C04DCC18DB644200919883 /* DUNTimelineUserMessage.m in Sources */,
 				C3C04DBE18DB642400919883 /* DUNCourse.m in Sources */,
-				C3C04DC918DB644200919883 /* DUNTimelineInteraction.m in Sources */,
 				C3C04DC118DB643800919883 /* DUNPoll.m in Sources */,
 				C3C04DC518DB643800919883 /* DUNStudent.m in Sources */,
 				C3C04DC618DB643800919883 /* DUNTeacher.m in Sources */,
