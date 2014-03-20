@@ -3,8 +3,7 @@
 #import "DUNPoll.h"
 #import "DUNThermometer.h"
 #import "DUNTopic.h"
-
-@class DUNCourse;
+#import "DUNCourse.h"
 
 @protocol DUNEvent
 @end

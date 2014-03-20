@@ -1,8 +1,8 @@
 #import "JSONModel.h"
 #import "DUNStudent.h"
 #import "DUNTeacher.h"
-#import "DUNEvent.h"
 
+@class DUNEvent;
 @class DUNOrganization;
 
 @protocol DUNCourse
@@ -17,7 +17,7 @@
 
 @property (nonatomic, strong) DUNOrganization<Optional> *organization;
 @property (nonatomic, strong) DUNTeacher *teacher;
-@property (nonatomic, strong) NSArray<DUNEvent, Optional> *events;
+@property (nonatomic, strong) NSArray<Optional> *events;
 @property (nonatomic, strong) NSArray<DUNStudent, Optional> *students;
 
 @end
