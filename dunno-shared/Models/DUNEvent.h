@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSDate *startAt;
 
 @property (nonatomic, strong) DUNTimeline<Optional> *timeline;
-@property (nonatomic, strong) DUNCourse *course;
+@property (nonatomic, strong) DUNCourse<Optional> *course;
 @property (nonatomic, strong) NSArray<DUNTopic, Optional> *topics;
 @property (nonatomic, strong) NSArray<DUNThermometer, Optional> *thermometers;
 @property (nonatomic, strong) NSArray<DUNPoll, Optional> *polls;
