@@ -5,10 +5,11 @@
 +(JSONKeyMapper*)keyMapper
 {
   return [[JSONKeyMapper alloc] initWithDictionary:@{
+              @"id": @"entityId",
               @"start_date": @"startAt",
-              @"start_time": @"startTime",
+//              @"start_time": @"startTime",
               @"end_date": @"endAt",
-              @"end_time": @"endTime",
+//              @"end_time": @"endTime",
          }];
 }
 
