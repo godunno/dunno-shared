@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-dunno-shared-Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-libPusher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-dunno-shared.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7D23B6C4616543A3A3043DB2</key>
+		<key>7BCEF1E364694749AC7339EC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F3F0E360A25842D789EC8F2F</key>
+		<key>A493D4207C1640ED87BDE625</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0A3AB409D2548DFB3CD1D47</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DD926451FBC44129A2FC19FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD68E71222D7400D845357A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

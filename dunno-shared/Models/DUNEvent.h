@@ -1,5 +1,11 @@
 #import "JSONModel.h"
 
+typedef NS_ENUM(NSInteger, DUNEventStatus) {
+  DUNEventAvailable,
+  DUNEventOpened,
+  DUNEventClosed
+};
+
 @class DUNCourse;
 @class DUNTimeline;
 
@@ -14,8 +20,8 @@
 
 @property (nonatomic, copy) NSString *uuid;
 @property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString<Optional> *status;
-//@property (nonatomic, assign) NSNumber<Optional> *duration;
+@property (nonatomic) DUNEventStatus status;
+@property (nonatomic, assign) NSNumber *duration;
 @property (nonatomic, strong) NSDate *startAt;
 
 @property (nonatomic, strong) DUNTimeline<Optional> *timeline;
