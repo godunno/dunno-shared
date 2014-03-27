@@ -4,12 +4,52 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-dunno-shared-AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-FlatUIKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-HexColors.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-ISO8601DateFormatter.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-dunno-shared-JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-dunno-shared-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-MJPopupViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-NSDate+Calendar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-dunno-shared-Reachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -29,30 +69,120 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-dunno-sharedTests-Expecta.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-sharedTests-OCHamcrest.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-sharedTests-OCMockito.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-sharedTests-Specta.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-sharedTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7BCEF1E364694749AC7339EC</key>
+		<key>04BE38B2063A48678D253FD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A493D4207C1640ED87BDE625</key>
+		<key>09169E3397944ACA97FEEAD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D0A3AB409D2548DFB3CD1D47</key>
+		<key>146435B0484B493AB086B091</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DD926451FBC44129A2FC19FD</key>
+		<key>2357AF8C58D548E79695D6B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD68E71222D7400D845357A2</key>
+		<key>293F92BF9AE047778E8DEC35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2E60BF31DDA34F14AB13C8C7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4145F6F9F6164E7482DEF831</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>73A079502DD94922A33E73A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8073E2A9807B49358C1A7E94</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90A89A83EFF14BF7BEC2C81C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94A12BB408174953B5E7E4A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94CE32A8C9C84360B158313F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A823DD2005324F4DA4B3E543</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A8CB1FEBAEC44257BAB5AFD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB49C8433D074E62B80368A8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AC8FD53FF3344C0F9F28E780</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BFA3E31BA56046C79CBCBEC3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E474AC15E8CD47F9A654E609</key>
 		<dict>
 			<key>primary</key>
 			<true/>

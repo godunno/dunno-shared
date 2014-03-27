@@ -1,608 +1,1691 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		C330421318D8E7F800AAE7C2 /* DUNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041F718D8E7F800AAE7C2 /* DUNEvent.m */; };
-		C330421418D8E7F800AAE7C2 /* DUNOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041F918D8E7F800AAE7C2 /* DUNOrganization.m */; };
-		C330421518D8E7F800AAE7C2 /* DUNPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041FB18D8E7F800AAE7C2 /* DUNPoll.m */; };
-		C330421618D8E7F800AAE7C2 /* DUNPollOption.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041FD18D8E7F800AAE7C2 /* DUNPollOption.m */; };
-		C330421718D8E7F800AAE7C2 /* DUNStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041FF18D8E7F800AAE7C2 /* DUNStudent.m */; };
-		C330421818D8E7F800AAE7C2 /* DUNTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420118D8E7F800AAE7C2 /* DUNTeacher.m */; };
-		C330421918D8E7F800AAE7C2 /* DUNThermometer.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420318D8E7F800AAE7C2 /* DUNThermometer.m */; };
-		C330421A18D8E7F800AAE7C2 /* DUNTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420518D8E7F800AAE7C2 /* DUNTopic.m */; };
-		C330421B18D8E7F800AAE7C2 /* DUNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420718D8E7F800AAE7C2 /* DUNUser.m */; };
-		C330421C18D8E7F800AAE7C2 /* DUNTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */; };
-		C330421E18D8E7F800AAE7C2 /* DUNTimelinePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */; };
-		C330421F18D8E7F800AAE7C2 /* DUNTimelineRating.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */; };
-		C330422018D8E7F800AAE7C2 /* DUNTimelineUserMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */; };
-		C37ABE6718E375E6004C5695 /* DUNPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6418E375E6004C5695 /* DUNPusher.m */; };
-		C37ABE6818E375E6004C5695 /* NSString+Cool.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6618E375E6004C5695 /* NSString+Cool.m */; };
-		C3C04DBD18DB5EBB00919883 /* DUNCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C04DBC18DB5EBB00919883 /* DUNCourse.m */; };
-		C3C04DBE18DB642400919883 /* DUNCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C04DBC18DB5EBB00919883 /* DUNCourse.m */; };
-		C3C04DBF18DB642A00919883 /* DUNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041F718D8E7F800AAE7C2 /* DUNEvent.m */; };
-		C3C04DC018DB643800919883 /* DUNOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041F918D8E7F800AAE7C2 /* DUNOrganization.m */; };
-		C3C04DC118DB643800919883 /* DUNPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041FB18D8E7F800AAE7C2 /* DUNPoll.m */; };
-		C3C04DC218DB643800919883 /* DUNPollOption.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041FD18D8E7F800AAE7C2 /* DUNPollOption.m */; };
-		C3C04DC318DB643800919883 /* DUNThermometer.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420318D8E7F800AAE7C2 /* DUNThermometer.m */; };
-		C3C04DC418DB643800919883 /* DUNTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420518D8E7F800AAE7C2 /* DUNTopic.m */; };
-		C3C04DC518DB643800919883 /* DUNStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041FF18D8E7F800AAE7C2 /* DUNStudent.m */; };
-		C3C04DC618DB643800919883 /* DUNTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420118D8E7F800AAE7C2 /* DUNTeacher.m */; };
-		C3C04DC718DB643800919883 /* DUNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420718D8E7F800AAE7C2 /* DUNUser.m */; };
-		C3C04DC818DB644200919883 /* DUNTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */; };
-		C3C04DCA18DB644200919883 /* DUNTimelinePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */; };
-		C3C04DCB18DB644200919883 /* DUNTimelineRating.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */; };
-		C3C04DCC18DB644200919883 /* DUNTimelineUserMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */; };
-		C3F568B418D769E500126A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B318D769E500126A3C /* Foundation.framework */; };
-		C3F568C218D769E500126A3C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568C118D769E500126A3C /* XCTest.framework */; };
-		C3F568C318D769E500126A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B318D769E500126A3C /* Foundation.framework */; };
-		C3F568C518D769E500126A3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568C418D769E500126A3C /* UIKit.framework */; };
-		C3F568C818D769E500126A3C /* libdunno-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B018D769E500126A3C /* libdunno-shared.a */; };
-		C3F568CE18D769E500126A3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F568CC18D769E500126A3C /* InfoPlist.strings */; };
-		F84C0875AEC14F96B4E4FF78 /* libPods-dunno-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC22CEA18DF448D9B5C018A /* libPods-dunno-shared.a */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C3F568C618D769E500126A3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C3F568A818D769E500126A3C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C3F568AF18D769E500126A3C;
-			remoteInfo = "dunno-shared";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C3F568AE18D769E500126A3C /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dunno-shared.xcconfig"; path = "Pods/Pods-dunno-shared.xcconfig"; sourceTree = "<group>"; };
-		5FC22CEA18DF448D9B5C018A /* libPods-dunno-shared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dunno-shared.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C33041F618D8E7F800AAE7C2 /* DUNEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEvent.h; sourceTree = "<group>"; };
-		C33041F718D8E7F800AAE7C2 /* DUNEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEvent.m; sourceTree = "<group>"; };
-		C33041F818D8E7F800AAE7C2 /* DUNOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNOrganization.h; sourceTree = "<group>"; };
-		C33041F918D8E7F800AAE7C2 /* DUNOrganization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNOrganization.m; sourceTree = "<group>"; };
-		C33041FA18D8E7F800AAE7C2 /* DUNPoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNPoll.h; sourceTree = "<group>"; };
-		C33041FB18D8E7F800AAE7C2 /* DUNPoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNPoll.m; sourceTree = "<group>"; };
-		C33041FC18D8E7F800AAE7C2 /* DUNPollOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNPollOption.h; sourceTree = "<group>"; };
-		C33041FD18D8E7F800AAE7C2 /* DUNPollOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNPollOption.m; sourceTree = "<group>"; };
-		C33041FE18D8E7F800AAE7C2 /* DUNStudent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNStudent.h; sourceTree = "<group>"; };
-		C33041FF18D8E7F800AAE7C2 /* DUNStudent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNStudent.m; sourceTree = "<group>"; };
-		C330420018D8E7F800AAE7C2 /* DUNTeacher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTeacher.h; sourceTree = "<group>"; };
-		C330420118D8E7F800AAE7C2 /* DUNTeacher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTeacher.m; sourceTree = "<group>"; };
-		C330420218D8E7F800AAE7C2 /* DUNThermometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNThermometer.h; sourceTree = "<group>"; };
-		C330420318D8E7F800AAE7C2 /* DUNThermometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNThermometer.m; sourceTree = "<group>"; };
-		C330420418D8E7F800AAE7C2 /* DUNTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTopic.h; sourceTree = "<group>"; };
-		C330420518D8E7F800AAE7C2 /* DUNTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTopic.m; sourceTree = "<group>"; };
-		C330420618D8E7F800AAE7C2 /* DUNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNUser.h; sourceTree = "<group>"; };
-		C330420718D8E7F800AAE7C2 /* DUNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNUser.m; sourceTree = "<group>"; };
-		C330420918D8E7F800AAE7C2 /* DUNTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimeline.h; sourceTree = "<group>"; };
-		C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimeline.m; sourceTree = "<group>"; };
-		C330420D18D8E7F800AAE7C2 /* DUNTimelinePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelinePoll.h; sourceTree = "<group>"; };
-		C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelinePoll.m; sourceTree = "<group>"; };
-		C330420F18D8E7F800AAE7C2 /* DUNTimelineRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelineRating.h; sourceTree = "<group>"; };
-		C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelineRating.m; sourceTree = "<group>"; };
-		C330421118D8E7F800AAE7C2 /* DUNTimelineUserMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelineUserMessage.h; sourceTree = "<group>"; };
-		C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelineUserMessage.m; sourceTree = "<group>"; };
-		C37ABE6318E375E6004C5695 /* DUNPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNPusher.h; sourceTree = "<group>"; };
-		C37ABE6418E375E6004C5695 /* DUNPusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNPusher.m; sourceTree = "<group>"; };
-		C37ABE6518E375E6004C5695 /* NSString+Cool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Cool.h"; sourceTree = "<group>"; };
-		C37ABE6618E375E6004C5695 /* NSString+Cool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Cool.m"; sourceTree = "<group>"; };
-		C37ABE6C18E37768004C5695 /* DUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNConfig.h; sourceTree = "<group>"; };
-		C3C04DBB18DB5EBB00919883 /* DUNCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNCourse.h; sourceTree = "<group>"; };
-		C3C04DBC18DB5EBB00919883 /* DUNCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNCourse.m; sourceTree = "<group>"; };
-		C3F568B018D769E500126A3C /* libdunno-shared.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libdunno-shared.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3F568B318D769E500126A3C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		C3F568B718D769E500126A3C /* dunno-shared-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dunno-shared-Prefix.pch"; sourceTree = "<group>"; };
-		C3F568C018D769E500126A3C /* dunno-sharedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dunno-sharedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3F568C118D769E500126A3C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C3F568C418D769E500126A3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C3F568CB18D769E500126A3C /* dunno-sharedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dunno-sharedTests-Info.plist"; sourceTree = "<group>"; };
-		C3F568CD18D769E500126A3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C3FEB6B018D7F9B3005B9AE6 /* dunno-shared.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "dunno-shared.podspec"; path = "../dunno-shared.podspec"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		C3F568AD18D769E500126A3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3F568B418D769E500126A3C /* Foundation.framework in Frameworks */,
-				F84C0875AEC14F96B4E4FF78 /* libPods-dunno-shared.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3F568BD18D769E500126A3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3F568C218D769E500126A3C /* XCTest.framework in Frameworks */,
-				C3F568C518D769E500126A3C /* UIKit.framework in Frameworks */,
-				C3F568C318D769E500126A3C /* Foundation.framework in Frameworks */,
-				C3F568C818D769E500126A3C /* libdunno-shared.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		C33041F518D8E7F800AAE7C2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				C33041F618D8E7F800AAE7C2 /* DUNEvent.h */,
-				C33041F718D8E7F800AAE7C2 /* DUNEvent.m */,
-				C3C04DBB18DB5EBB00919883 /* DUNCourse.h */,
-				C3C04DBC18DB5EBB00919883 /* DUNCourse.m */,
-				C33041F818D8E7F800AAE7C2 /* DUNOrganization.h */,
-				C33041F918D8E7F800AAE7C2 /* DUNOrganization.m */,
-				C33041FA18D8E7F800AAE7C2 /* DUNPoll.h */,
-				C33041FB18D8E7F800AAE7C2 /* DUNPoll.m */,
-				C33041FC18D8E7F800AAE7C2 /* DUNPollOption.h */,
-				C33041FD18D8E7F800AAE7C2 /* DUNPollOption.m */,
-				C330420218D8E7F800AAE7C2 /* DUNThermometer.h */,
-				C330420318D8E7F800AAE7C2 /* DUNThermometer.m */,
-				C330420418D8E7F800AAE7C2 /* DUNTopic.h */,
-				C330420518D8E7F800AAE7C2 /* DUNTopic.m */,
-				C33041FE18D8E7F800AAE7C2 /* DUNStudent.h */,
-				C33041FF18D8E7F800AAE7C2 /* DUNStudent.m */,
-				C330420018D8E7F800AAE7C2 /* DUNTeacher.h */,
-				C330420118D8E7F800AAE7C2 /* DUNTeacher.m */,
-				C330420618D8E7F800AAE7C2 /* DUNUser.h */,
-				C330420718D8E7F800AAE7C2 /* DUNUser.m */,
-				C330420818D8E7F800AAE7C2 /* Timeline */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		C330420818D8E7F800AAE7C2 /* Timeline */ = {
-			isa = PBXGroup;
-			children = (
-				C330420918D8E7F800AAE7C2 /* DUNTimeline.h */,
-				C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */,
-				C330420D18D8E7F800AAE7C2 /* DUNTimelinePoll.h */,
-				C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */,
-				C330420F18D8E7F800AAE7C2 /* DUNTimelineRating.h */,
-				C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */,
-				C330421118D8E7F800AAE7C2 /* DUNTimelineUserMessage.h */,
-				C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */,
-			);
-			path = Timeline;
-			sourceTree = "<group>";
-		};
-		C37ABE6218E375E6004C5695 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				C37ABE6C18E37768004C5695 /* DUNConfig.h */,
-				C37ABE6318E375E6004C5695 /* DUNPusher.h */,
-				C37ABE6418E375E6004C5695 /* DUNPusher.m */,
-				C37ABE6518E375E6004C5695 /* NSString+Cool.h */,
-				C37ABE6618E375E6004C5695 /* NSString+Cool.m */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		C3F568A718D769E500126A3C = {
-			isa = PBXGroup;
-			children = (
-				C3F568B518D769E500126A3C /* dunno-shared */,
-				C3F568C918D769E500126A3C /* dunno-sharedTests */,
-				C3F568B218D769E500126A3C /* Frameworks */,
-				C3F568B118D769E500126A3C /* Products */,
-				3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */,
-			);
-			sourceTree = "<group>";
-		};
-		C3F568B118D769E500126A3C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C3F568B018D769E500126A3C /* libdunno-shared.a */,
-				C3F568C018D769E500126A3C /* dunno-sharedTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C3F568B218D769E500126A3C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C3F568B318D769E500126A3C /* Foundation.framework */,
-				C3F568C118D769E500126A3C /* XCTest.framework */,
-				C3F568C418D769E500126A3C /* UIKit.framework */,
-				5FC22CEA18DF448D9B5C018A /* libPods-dunno-shared.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C3F568B518D769E500126A3C /* dunno-shared */ = {
-			isa = PBXGroup;
-			children = (
-				C37ABE6218E375E6004C5695 /* Components */,
-				C33041F518D8E7F800AAE7C2 /* Models */,
-				C3F568B618D769E500126A3C /* Supporting Files */,
-			);
-			path = "dunno-shared";
-			sourceTree = "<group>";
-		};
-		C3F568B618D769E500126A3C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C3F568B718D769E500126A3C /* dunno-shared-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C3F568C918D769E500126A3C /* dunno-sharedTests */ = {
-			isa = PBXGroup;
-			children = (
-				C3F568CA18D769E500126A3C /* Supporting Files */,
-			);
-			path = "dunno-sharedTests";
-			sourceTree = "<group>";
-		};
-		C3F568CA18D769E500126A3C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C3FEB6B018D7F9B3005B9AE6 /* dunno-shared.podspec */,
-				C3F568CB18D769E500126A3C /* dunno-sharedTests-Info.plist */,
-				C3F568CC18D769E500126A3C /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		C3F568AF18D769E500126A3C /* dunno-shared */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3F568D318D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-shared" */;
-			buildPhases = (
-				429D8307250147208F68DF12 /* Check Pods Manifest.lock */,
-				C3F568AC18D769E500126A3C /* Sources */,
-				C3F568AD18D769E500126A3C /* Frameworks */,
-				C3F568AE18D769E500126A3C /* CopyFiles */,
-				85491E9C752B40DA92853AF3 /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "dunno-shared";
-			productName = "dunno-shared";
-			productReference = C3F568B018D769E500126A3C /* libdunno-shared.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C3F568BF18D769E500126A3C /* dunno-sharedTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C3F568D618D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-sharedTests" */;
-			buildPhases = (
-				C3F568BC18D769E500126A3C /* Sources */,
-				C3F568BD18D769E500126A3C /* Frameworks */,
-				C3F568BE18D769E500126A3C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C3F568C718D769E500126A3C /* PBXTargetDependency */,
-			);
-			name = "dunno-sharedTests";
-			productName = "dunno-sharedTests";
-			productReference = C3F568C018D769E500126A3C /* dunno-sharedTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		C3F568A818D769E500126A3C /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = dunno;
-			};
-			buildConfigurationList = C3F568AB18D769E500126A3C /* Build configuration list for PBXProject "dunno-shared" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = C3F568A718D769E500126A3C;
-			productRefGroup = C3F568B118D769E500126A3C /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				C3F568AF18D769E500126A3C /* dunno-shared */,
-				C3F568BF18D769E500126A3C /* dunno-sharedTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		C3F568BE18D769E500126A3C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3F568CE18D769E500126A3C /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		429D8307250147208F68DF12 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		85491E9C752B40DA92853AF3 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-dunno-shared-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		C3F568AC18D769E500126A3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C330421F18D8E7F800AAE7C2 /* DUNTimelineRating.m in Sources */,
-				C330421E18D8E7F800AAE7C2 /* DUNTimelinePoll.m in Sources */,
-				C330422018D8E7F800AAE7C2 /* DUNTimelineUserMessage.m in Sources */,
-				C330421818D8E7F800AAE7C2 /* DUNTeacher.m in Sources */,
-				C330421918D8E7F800AAE7C2 /* DUNThermometer.m in Sources */,
-				C330421718D8E7F800AAE7C2 /* DUNStudent.m in Sources */,
-				C37ABE6718E375E6004C5695 /* DUNPusher.m in Sources */,
-				C330421B18D8E7F800AAE7C2 /* DUNUser.m in Sources */,
-				C3C04DBD18DB5EBB00919883 /* DUNCourse.m in Sources */,
-				C330421A18D8E7F800AAE7C2 /* DUNTopic.m in Sources */,
-				C37ABE6818E375E6004C5695 /* NSString+Cool.m in Sources */,
-				C330421518D8E7F800AAE7C2 /* DUNPoll.m in Sources */,
-				C330421618D8E7F800AAE7C2 /* DUNPollOption.m in Sources */,
-				C330421418D8E7F800AAE7C2 /* DUNOrganization.m in Sources */,
-				C330421C18D8E7F800AAE7C2 /* DUNTimeline.m in Sources */,
-				C330421318D8E7F800AAE7C2 /* DUNEvent.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3F568BC18D769E500126A3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C3C04DC818DB644200919883 /* DUNTimeline.m in Sources */,
-				C3C04DBF18DB642A00919883 /* DUNEvent.m in Sources */,
-				C3C04DC418DB643800919883 /* DUNTopic.m in Sources */,
-				C3C04DC218DB643800919883 /* DUNPollOption.m in Sources */,
-				C3C04DCA18DB644200919883 /* DUNTimelinePoll.m in Sources */,
-				C3C04DCC18DB644200919883 /* DUNTimelineUserMessage.m in Sources */,
-				C3C04DBE18DB642400919883 /* DUNCourse.m in Sources */,
-				C3C04DC118DB643800919883 /* DUNPoll.m in Sources */,
-				C3C04DC518DB643800919883 /* DUNStudent.m in Sources */,
-				C3C04DC618DB643800919883 /* DUNTeacher.m in Sources */,
-				C3C04DC318DB643800919883 /* DUNThermometer.m in Sources */,
-				C3C04DC718DB643800919883 /* DUNUser.m in Sources */,
-				C3C04DC018DB643800919883 /* DUNOrganization.m in Sources */,
-				C3C04DCB18DB644200919883 /* DUNTimelineRating.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C3F568C718D769E500126A3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C3F568AF18D769E500126A3C /* dunno-shared */;
-			targetProxy = C3F568C618D769E500126A3C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C3F568CC18D769E500126A3C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3F568CD18D769E500126A3C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		C3F568D118D769E500126A3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		C3F568D218D769E500126A3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		C3F568D418D769E500126A3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/dunno_shared.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		C3F568D518D769E500126A3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/dunno_shared.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C3F568D718D769E500126A3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3235334E9EA14D60A64F5EC1 /* Pods-dunno-shared.xcconfig */;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "dunno-sharedTests/dunno-sharedTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C3F568D818D769E500126A3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "dunno-shared/dunno-shared-Prefix.pch";
-				INFOPLIST_FILE = "dunno-sharedTests/dunno-sharedTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		C3F568AB18D769E500126A3C /* Build configuration list for PBXProject "dunno-shared" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3F568D118D769E500126A3C /* Debug */,
-				C3F568D218D769E500126A3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3F568D318D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-shared" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3F568D418D769E500126A3C /* Debug */,
-				C3F568D518D769E500126A3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C3F568D618D769E500126A3C /* Build configuration list for PBXNativeTarget "dunno-sharedTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3F568D718D769E500126A3C /* Debug */,
-				C3F568D818D769E500126A3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = C3F568A818D769E500126A3C /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>30BD67F611AA4F66BF992D28</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>3235334E9EA14D60A64F5EC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-dunno-shared.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-dunno-shared.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>348C4864E7F5481D839F8F9D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>69F426215ACC4D43AE1A6DA9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>429D8307250147208F68DF12</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>50017E3FC633402A9E599DF3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-dunno-sharedTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>5FC22CEA18DF448D9B5C018A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-dunno-shared.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>69F426215ACC4D43AE1A6DA9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-dunno-sharedTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>85491E9C752B40DA92853AF3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-dunno-shared-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C33041F518D8E7F800AAE7C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C33041F618D8E7F800AAE7C2</string>
+				<string>C33041F718D8E7F800AAE7C2</string>
+				<string>C3C04DBB18DB5EBB00919883</string>
+				<string>C3C04DBC18DB5EBB00919883</string>
+				<string>C33041F818D8E7F800AAE7C2</string>
+				<string>C33041F918D8E7F800AAE7C2</string>
+				<string>C33041FA18D8E7F800AAE7C2</string>
+				<string>C33041FB18D8E7F800AAE7C2</string>
+				<string>C33041FC18D8E7F800AAE7C2</string>
+				<string>C33041FD18D8E7F800AAE7C2</string>
+				<string>C330420218D8E7F800AAE7C2</string>
+				<string>C330420318D8E7F800AAE7C2</string>
+				<string>C330420418D8E7F800AAE7C2</string>
+				<string>C330420518D8E7F800AAE7C2</string>
+				<string>C33041FE18D8E7F800AAE7C2</string>
+				<string>C33041FF18D8E7F800AAE7C2</string>
+				<string>C330420018D8E7F800AAE7C2</string>
+				<string>C330420118D8E7F800AAE7C2</string>
+				<string>C330420618D8E7F800AAE7C2</string>
+				<string>C330420718D8E7F800AAE7C2</string>
+				<string>C330420818D8E7F800AAE7C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Models</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041F618D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNEvent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041F718D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNEvent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041F818D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNOrganization.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041F918D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNOrganization.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041FA18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNPoll.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041FB18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNPoll.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041FC18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNPollOption.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041FD18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNPollOption.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041FE18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNStudent.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C33041FF18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNStudent.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420018D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNTeacher.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420118D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNTeacher.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420218D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNThermometer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420318D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNThermometer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420418D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNTopic.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420518D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNTopic.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420618D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNUser.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420718D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNUser.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420818D8E7F800AAE7C2</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C330420918D8E7F800AAE7C2</string>
+				<string>C330420A18D8E7F800AAE7C2</string>
+				<string>C330420D18D8E7F800AAE7C2</string>
+				<string>C330420E18D8E7F800AAE7C2</string>
+				<string>C330420F18D8E7F800AAE7C2</string>
+				<string>C330421018D8E7F800AAE7C2</string>
+				<string>C330421118D8E7F800AAE7C2</string>
+				<string>C330421218D8E7F800AAE7C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Timeline</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420918D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNTimeline.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420A18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNTimeline.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420D18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNTimelinePoll.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420E18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNTimelinePoll.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330420F18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNTimelineRating.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330421018D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNTimelineRating.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330421118D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNTimelineUserMessage.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330421218D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNTimelineUserMessage.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C330421318D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041F718D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421418D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041F918D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421518D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041FB18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421618D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041FD18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421718D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041FF18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421818D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420118D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421918D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420318D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421A18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420518D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421B18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420718D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421C18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420A18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421E18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420E18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330421F18D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330421018D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C330422018D8E7F800AAE7C2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330421218D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C37ABE6218E375E6004C5695</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C37ABE6C18E37768004C5695</string>
+				<string>C37ABE6318E375E6004C5695</string>
+				<string>C37ABE6418E375E6004C5695</string>
+				<string>C37ABE6518E375E6004C5695</string>
+				<string>C37ABE6618E375E6004C5695</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Components</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C37ABE6318E375E6004C5695</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNPusher.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C37ABE6418E375E6004C5695</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNPusher.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C37ABE6518E375E6004C5695</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSString+Cool.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C37ABE6618E375E6004C5695</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSString+Cool.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C37ABE6718E375E6004C5695</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C37ABE6418E375E6004C5695</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C37ABE6818E375E6004C5695</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C37ABE6618E375E6004C5695</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C37ABE6C18E37768004C5695</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNConfig.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3C04DBB18DB5EBB00919883</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DUNCourse.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3C04DBC18DB5EBB00919883</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DUNCourse.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3C04DBD18DB5EBB00919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3C04DBC18DB5EBB00919883</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DBE18DB642400919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3C04DBC18DB5EBB00919883</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DBF18DB642A00919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041F718D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC018DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041F918D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC118DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041FB18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC218DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041FD18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC318DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420318D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC418DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420518D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC518DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C33041FF18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC618DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420118D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC718DB643800919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420718D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DC818DB644200919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420A18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DCA18DB644200919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330420E18D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DCB18DB644200919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330421018D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3C04DCC18DB644200919883</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C330421218D8E7F800AAE7C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3F568A718D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3F568B518D769E500126A3C</string>
+				<string>C3F568C918D769E500126A3C</string>
+				<string>C3F568B218D769E500126A3C</string>
+				<string>C3F568B118D769E500126A3C</string>
+				<string>3235334E9EA14D60A64F5EC1</string>
+				<string>EA55F5BD35C04DD3A225AA28</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568A818D769E500126A3C</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>dunno</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>C3F568AB18D769E500126A3C</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>C3F568A718D769E500126A3C</string>
+			<key>productRefGroup</key>
+			<string>C3F568B118D769E500126A3C</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>C3F568AF18D769E500126A3C</string>
+				<string>C3F568BF18D769E500126A3C</string>
+			</array>
+		</dict>
+		<key>C3F568AB18D769E500126A3C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C3F568D118D769E500126A3C</string>
+				<string>C3F568D218D769E500126A3C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C3F568AC18D769E500126A3C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C330421F18D8E7F800AAE7C2</string>
+				<string>C330421E18D8E7F800AAE7C2</string>
+				<string>C330422018D8E7F800AAE7C2</string>
+				<string>C330421818D8E7F800AAE7C2</string>
+				<string>C330421918D8E7F800AAE7C2</string>
+				<string>C330421718D8E7F800AAE7C2</string>
+				<string>C37ABE6718E375E6004C5695</string>
+				<string>C330421B18D8E7F800AAE7C2</string>
+				<string>C3C04DBD18DB5EBB00919883</string>
+				<string>C330421A18D8E7F800AAE7C2</string>
+				<string>C37ABE6818E375E6004C5695</string>
+				<string>C330421518D8E7F800AAE7C2</string>
+				<string>C330421618D8E7F800AAE7C2</string>
+				<string>C330421418D8E7F800AAE7C2</string>
+				<string>C330421C18D8E7F800AAE7C2</string>
+				<string>C330421318D8E7F800AAE7C2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C3F568AD18D769E500126A3C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C3F568B418D769E500126A3C</string>
+				<string>F84C0875AEC14F96B4E4FF78</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C3F568AE18D769E500126A3C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>dstPath</key>
+			<string>include/$(PRODUCT_NAME)</string>
+			<key>dstSubfolderSpec</key>
+			<string>16</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXCopyFilesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C3F568AF18D769E500126A3C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C3F568D318D769E500126A3C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>429D8307250147208F68DF12</string>
+				<string>C3F568AC18D769E500126A3C</string>
+				<string>C3F568AD18D769E500126A3C</string>
+				<string>C3F568AE18D769E500126A3C</string>
+				<string>85491E9C752B40DA92853AF3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>dunno-shared</string>
+			<key>productName</key>
+			<string>dunno-shared</string>
+			<key>productReference</key>
+			<string>C3F568B018D769E500126A3C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>C3F568B018D769E500126A3C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libdunno-shared.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C3F568B118D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3F568B018D769E500126A3C</string>
+				<string>C3F568C018D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568B218D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3F568B318D769E500126A3C</string>
+				<string>C3F568C118D769E500126A3C</string>
+				<string>C3F568C418D769E500126A3C</string>
+				<string>5FC22CEA18DF448D9B5C018A</string>
+				<string>69F426215ACC4D43AE1A6DA9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568B318D769E500126A3C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>C3F568B418D769E500126A3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3F568B318D769E500126A3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3F568B518D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C37ABE6218E375E6004C5695</string>
+				<string>C33041F518D8E7F800AAE7C2</string>
+				<string>C3F568B618D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>dunno-shared</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568B618D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3F568B718D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568B718D769E500126A3C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>dunno-shared-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568BC18D769E500126A3C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C3C04DC818DB644200919883</string>
+				<string>C3C04DBF18DB642A00919883</string>
+				<string>C3C04DC418DB643800919883</string>
+				<string>C3C04DC218DB643800919883</string>
+				<string>C3C04DCA18DB644200919883</string>
+				<string>C3C04DCC18DB644200919883</string>
+				<string>C3C04DBE18DB642400919883</string>
+				<string>C3C04DC118DB643800919883</string>
+				<string>C3C04DC518DB643800919883</string>
+				<string>C3C04DC618DB643800919883</string>
+				<string>C3C04DC318DB643800919883</string>
+				<string>C3C04DC718DB643800919883</string>
+				<string>C3C04DC018DB643800919883</string>
+				<string>C3C04DCB18DB644200919883</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C3F568BD18D769E500126A3C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C3F568C218D769E500126A3C</string>
+				<string>C3F568C518D769E500126A3C</string>
+				<string>C3F568C318D769E500126A3C</string>
+				<string>C3F568C818D769E500126A3C</string>
+				<string>348C4864E7F5481D839F8F9D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C3F568BE18D769E500126A3C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>C3F568CE18D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C3F568BF18D769E500126A3C</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C3F568D618D769E500126A3C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>30BD67F611AA4F66BF992D28</string>
+				<string>C3F568BC18D769E500126A3C</string>
+				<string>C3F568BD18D769E500126A3C</string>
+				<string>C3F568BE18D769E500126A3C</string>
+				<string>50017E3FC633402A9E599DF3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>C3F568C718D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>dunno-sharedTests</string>
+			<key>productName</key>
+			<string>dunno-sharedTests</string>
+			<key>productReference</key>
+			<string>C3F568C018D769E500126A3C</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>C3F568C018D769E500126A3C</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>dunno-sharedTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C3F568C118D769E500126A3C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C3F568C218D769E500126A3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3F568C118D769E500126A3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3F568C318D769E500126A3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3F568B318D769E500126A3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3F568C418D769E500126A3C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>C3F568C518D769E500126A3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3F568C418D769E500126A3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3F568C618D769E500126A3C</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>C3F568A818D769E500126A3C</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>C3F568AF18D769E500126A3C</string>
+			<key>remoteInfo</key>
+			<string>dunno-shared</string>
+		</dict>
+		<key>C3F568C718D769E500126A3C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>C3F568AF18D769E500126A3C</string>
+			<key>targetProxy</key>
+			<string>C3F568C618D769E500126A3C</string>
+		</dict>
+		<key>C3F568C818D769E500126A3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3F568B018D769E500126A3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3F568C918D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3F568CA18D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>dunno-sharedTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568CA18D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3FEB6B018D7F9B3005B9AE6</string>
+				<string>C3F568CB18D769E500126A3C</string>
+				<string>C3F568CC18D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568CB18D769E500126A3C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>dunno-sharedTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568CC18D769E500126A3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C3F568CD18D769E500126A3C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568CD18D769E500126A3C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C3F568CE18D769E500126A3C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C3F568CC18D769E500126A3C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C3F568D118D769E500126A3C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3235334E9EA14D60A64F5EC1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C3F568D218D769E500126A3C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3235334E9EA14D60A64F5EC1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C3F568D318D769E500126A3C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C3F568D418D769E500126A3C</string>
+				<string>C3F568D518D769E500126A3C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C3F568D418D769E500126A3C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3235334E9EA14D60A64F5EC1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/dunno_shared.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>dunno-shared/dunno-shared-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C3F568D518D769E500126A3C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3235334E9EA14D60A64F5EC1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>DSTROOT</key>
+				<string>/tmp/dunno_shared.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>dunno-shared/dunno-shared-Prefix.pch</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>-ObjC</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C3F568D618D769E500126A3C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>C3F568D718D769E500126A3C</string>
+				<string>C3F568D818D769E500126A3C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C3F568D718D769E500126A3C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EA55F5BD35C04DD3A225AA28</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>dunno-shared/dunno-shared-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>dunno-sharedTests/dunno-sharedTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>C3F568D818D769E500126A3C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>EA55F5BD35C04DD3A225AA28</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>dunno-shared/dunno-shared-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>dunno-sharedTests/dunno-sharedTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C3FEB6B018D7F9B3005B9AE6</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>dunno-shared.podspec</string>
+			<key>path</key>
+			<string>../dunno-shared.podspec</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EA55F5BD35C04DD3A225AA28</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-dunno-sharedTests.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-dunno-sharedTests.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F84C0875AEC14F96B4E4FF78</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5FC22CEA18DF448D9B5C018A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>C3F568A818D769E500126A3C</string>
+</dict>
+</plist>
