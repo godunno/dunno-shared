@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4145F6F9F6164E7482DEF831"
+               BlueprintIdentifier = "E025F7FA09BF4DADAA02D7C2"
                BuildableName = "libPods-dunno-shared-NSDate+Calendar.a"
                BlueprintName = "Pods-dunno-shared-NSDate+Calendar"
                ReferencedContainer = "container:Pods.xcodeproj">

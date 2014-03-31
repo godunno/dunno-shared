@@ -14,12 +14,6 @@ target "dunno-shared" do
   pod 'ISO8601DateFormatter', '~> 0.7'
   pod 'NSDate+Calendar'
   
-  #visual
-  pod 'MJPopupViewController', :git => 'https://github.com/seufagner/MJPopupViewController'
-  pod 'MBProgressHUD', '~> 0.8'
-  pod 'FlatUIKit'
-  pod 'HexColors'
-
   #other
   pod 'JSONModel'
   pod 'libPusher', '~> 1.4'

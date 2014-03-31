@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A8CB1FEBAEC44257BAB5AFD8"
+               BlueprintIdentifier = "D228F0399BDA4C6EAE0E8EB9"
                BuildableName = "libPods-dunno-sharedTests.a"
                BlueprintName = "Pods-dunno-sharedTests"
                ReferencedContainer = "container:Pods.xcodeproj">

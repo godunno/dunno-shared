@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BFA3E31BA56046C79CBCBEC3"
+               BlueprintIdentifier = "BF2A2C3A5F41432FBFDF6BC8"
                BuildableName = "libPods-dunno-shared-SocketRocket.a"
                BlueprintName = "Pods-dunno-shared-SocketRocket"
                ReferencedContainer = "container:Pods.xcodeproj">

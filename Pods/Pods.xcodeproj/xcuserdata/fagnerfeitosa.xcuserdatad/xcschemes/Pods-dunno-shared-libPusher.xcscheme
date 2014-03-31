@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC8FD53FF3344C0F9F28E780"
+               BlueprintIdentifier = "70B2EBC6668443D3B748D3E6"
                BuildableName = "libPods-dunno-shared-libPusher.a"
                BlueprintName = "Pods-dunno-shared-libPusher"
                ReferencedContainer = "container:Pods.xcodeproj">

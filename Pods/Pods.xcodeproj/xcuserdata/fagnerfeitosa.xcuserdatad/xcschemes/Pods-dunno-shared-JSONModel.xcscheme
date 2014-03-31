@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "293F92BF9AE047778E8DEC35"
+               BlueprintIdentifier = "7586747691B84FB4B1258115"
                BuildableName = "libPods-dunno-shared-JSONModel.a"
                BlueprintName = "Pods-dunno-shared-JSONModel"
                ReferencedContainer = "container:Pods.xcodeproj">

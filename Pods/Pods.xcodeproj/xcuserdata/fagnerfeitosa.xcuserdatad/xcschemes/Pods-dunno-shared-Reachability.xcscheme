@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "73A079502DD94922A33E73A8"
+               BlueprintIdentifier = "A9C41512A2534E7980E75957"
                BuildableName = "libPods-dunno-shared-Reachability.a"
                BlueprintName = "Pods-dunno-shared-Reachability"
                ReferencedContainer = "container:Pods.xcodeproj">
