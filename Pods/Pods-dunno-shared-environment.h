@@ -18,6 +18,18 @@
 #define COCOAPODS_VERSION_MINOR_JSONModel 12
 #define COCOAPODS_VERSION_PATCH_JSONModel 0
 
+// Mantle
+#define COCOAPODS_POD_AVAILABLE_Mantle
+#define COCOAPODS_VERSION_MAJOR_Mantle 1
+#define COCOAPODS_VERSION_MINOR_Mantle 4
+#define COCOAPODS_VERSION_PATCH_Mantle 1
+
+// Mantle/extobjc
+#define COCOAPODS_POD_AVAILABLE_Mantle_extobjc
+#define COCOAPODS_VERSION_MAJOR_Mantle_extobjc 1
+#define COCOAPODS_VERSION_MINOR_Mantle_extobjc 4
+#define COCOAPODS_VERSION_PATCH_Mantle_extobjc 1
+
 // NSDate+Calendar
 #define COCOAPODS_POD_AVAILABLE_NSDate_Calendar
 #define COCOAPODS_VERSION_MAJOR_NSDate_Calendar 0

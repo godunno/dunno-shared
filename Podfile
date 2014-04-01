@@ -11,6 +11,7 @@ target "dunno-shared" do
   pod 'NSDate+Calendar'
   
   #other
+  pod 'Mantle'
   pod 'JSONModel'
   pod 'libPusher', '~> 1.4'
 end

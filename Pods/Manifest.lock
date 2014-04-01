@@ -6,6 +6,9 @@ PODS:
     - libPusher/Core
   - libPusher/Core (1.5):
     - SocketRocket (= 0.3.1-beta2)
+  - Mantle (1.4.1):
+    - Mantle/extobjc
+  - Mantle/extobjc (1.4.1)
   - NSDate+Calendar (0.0.3)
   - OCHamcrest (3.0.1)
   - OCMockito (1.0.0):
@@ -18,6 +21,7 @@ DEPENDENCIES:
   - ISO8601DateFormatter (~> 0.7)
   - JSONModel
   - libPusher (~> 1.4)
+  - Mantle
   - NSDate+Calendar
   - OCMockito (~> 1.0.0)
   - Specta (~> 0.2.1)
@@ -27,6 +31,7 @@ SPEC CHECKSUMS:
   ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
   JSONModel: f391da60a15e11f8fa8950fb980b8f799ae3453f
   libPusher: 295f281f1003aa678382a387e3043c298f270e4d
+  Mantle: 0714cdb2b8559d9e6c2410d6a8529e3307bff189
   NSDate+Calendar: 72bea251b7a377c5783d358155b9ad68435bbc1f
   OCHamcrest: 782c52ae8c673e5d6060a65005cfd26d20d519ba
   OCMockito: 8b6a244d7d81ba3cd2095bc357c20ae7b22c8977

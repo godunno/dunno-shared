@@ -2,15 +2,13 @@
 
 @implementation DUNTeacher
 
-
-+(JSONKeyMapper*)keyMapper
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-  return [[JSONKeyMapper alloc] initWithDictionary:
-          @{@"id": @"entityId",
-            @"avatar" : @"avatarURLString",
-            @"authentication_token" : @"authToken",
-            }
-          ];
+  return  @{
+            @"entityId":@"id",
+            @"avatarURLString": @"avatar",
+            @"authToken":@"authentication_token",
+            };
 }
 
 @end
