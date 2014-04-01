@@ -5,10 +5,6 @@ inhibit_all_warnings!
 xcodeproj "dunno-shared"
 
 target "dunno-shared" do
-  # network
-  pod 'AFNetworking', '~> 1.0'
-  pod 'Reachability', '~> 3.1.1'
-  pod 'SDWebImage', '~> 3.5'
   
   #dates
   pod 'ISO8601DateFormatter', '~> 0.7'
