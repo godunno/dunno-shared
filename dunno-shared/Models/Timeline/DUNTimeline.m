@@ -10,21 +10,26 @@
   
   [_messages enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     DUNTimelineUserMessage* m = (DUNTimelineUserMessage*)obj;
-    if([message.entityId isEqualToString:m.entityId]){
+    if(message.entityId == m.entityId){
       [_messages replaceObjectAtIndex:idx withObject:message];
       *stop = TRUE;
     }
   }];
 }
 
-+(JSONKeyMapper*)keyMapper
+#pragma  mark -
+#pragma  mark - Mantle JSON Serializer
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-  return [[JSONKeyMapper alloc] initWithDictionary:
-          @{
-            @"id": @"entityId",
-            @"started_at":@"startedAt"
-            }
-          ];
+  return  @{
+            @"entityId": @"id",
+            @"startAt":@"start_at",
+            };
+}
+
++ (NSValueTransformer *)messagesJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNTimelineUserMessage.class];
 }
 
 @end

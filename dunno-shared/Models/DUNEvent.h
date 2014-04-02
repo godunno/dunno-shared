@@ -1,4 +1,7 @@
-#import "JSONModel.h"
+#import "DUNCourse.h"
+#import "DUNTimeline.h"
+
+#import <Mantle/Mantle.h>
 
 typedef NS_ENUM(NSInteger, DUNEventStatus) {
   DUNEventAvailable,
@@ -6,39 +9,25 @@ typedef NS_ENUM(NSInteger, DUNEventStatus) {
   DUNEventClosed
 };
 
-@class DUNCourse;
-@class DUNTimeline;
+@interface DUNEvent : MTLModel<MTLJSONSerializing>
 
-@protocol DUNThermometer;
-@protocol DUNTopic;
-@protocol DUNPoll;
+@property (nonatomic, readonly, copy) NSString *uuid;
+@property (nonatomic, readonly, copy) NSString *title;
+@property (nonatomic, readonly, assign) DUNEventStatus status;
+@property (nonatomic, readonly, copy) NSString *duration;
+@property (nonatomic, readonly, strong) NSDate *startAt;
 
-@protocol DUNEvent
-@end
-
-@interface DUNEvent : JSONModel
-
-@property (nonatomic, copy) NSString *uuid;
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic) DUNEventStatus status;
-@property (nonatomic, assign) NSNumber *duration;
-@property (nonatomic, strong) NSDate *startAt;
-
-@property (nonatomic, strong) DUNTimeline<Optional> *timeline;
-@property (nonatomic, strong) DUNCourse<Optional> *course;
-@property (nonatomic, strong) NSArray<DUNTopic, Optional> *topics;
-@property (nonatomic, strong) NSArray<DUNThermometer, Optional> *thermometers;
-@property (nonatomic, strong) NSArray<DUNPoll, Optional> *polls;
+@property (nonatomic, readonly, strong) DUNTimeline *timeline;
+@property (nonatomic, readonly, strong) DUNCourse *course;
+@property (nonatomic, readonly, strong) NSArray *topics;
+@property (nonatomic, readonly, strong) NSArray *thermometers;
+@property (nonatomic, readonly, strong) NSArray *polls;
 
 //pusher properties
-@property (nonatomic, copy) NSString<Optional> *channelName;
-@property (nonatomic, copy) NSString<Optional> *studentMessageEvent;
-@property (nonatomic, copy) NSString<Optional> *upDownVoteMessageEvent;
-@property (nonatomic, copy) NSString<Optional> *closeEvent;
-@property (nonatomic, copy) NSString<Optional> *releasePollEvent;
-
-
-- (BOOL) isOpen;
-- (BOOL) isClosed;
+@property (nonatomic, readonly, copy) NSString *channelName;
+@property (nonatomic, readonly, copy) NSString *studentMessageEvent;
+@property (nonatomic, readonly, copy) NSString *upDownVoteMessageEvent;
+@property (nonatomic, readonly, copy) NSString *closeEvent;
+@property (nonatomic, readonly, copy) NSString *releasePollEvent;
 
 @end

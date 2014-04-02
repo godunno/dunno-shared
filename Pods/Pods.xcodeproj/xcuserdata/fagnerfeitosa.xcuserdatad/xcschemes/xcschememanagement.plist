@@ -9,11 +9,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-dunno-shared-JSONModel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-dunno-shared-Mantle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,62 +62,57 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>02B920015AC6410C961DA562</key>
+		<key>21579F48BC5F468BB4BE49D8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2A03E36F701D4C58B661262D</key>
+		<key>21DD3F2D70AD4E82BC781061</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3163F5FA63E5400A84786EDB</key>
+		<key>22D854848B384D41B2844FB8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3A70DBC112D440F1B4D5FC20</key>
+		<key>29D7975279B74F0F90F9C517</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6080DA08E5C74EA68A6AE67A</key>
+		<key>43E958118E4E464591855290</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6F943CE2257E464C8DEC9CC8</key>
+		<key>53BF21417F3C4ACFB05F7322</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7C86459B159C4C1EAB82534C</key>
+		<key>5B8CD351A4A64F5188441C55</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86AF4380A7764C34A5909DD1</key>
+		<key>BECDB23CCC8F4A0792C7FE73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8CA9EA31BE10411BB8989670</key>
+		<key>CA3032CDF687479B97C0F902</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA43A79DFB064F308BDC5D1D</key>
+		<key>E095F57B2D594E249D5D4A6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C1E8A8E79A664604BCD9EEE6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EAFC4FA635514B64BD7B63CD</key>
+		<key>F8B8857A45584F7C94C4272B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,29 +1,24 @@
-#import "JSONModel.h"
+#import "DUNTeacher.h"
+#import "DUNOrganization.h"
 
-@class DUNTeacher;
-@class DUNOrganization;
-@protocol DUNStudent;
-@protocol DUNEvent;
+#import <Mantle/Mantle.h>
 
-@protocol DUNCourse
-@end
+@interface DUNCourse :  MTLModel<MTLJSONSerializing>
 
-@interface DUNCourse : JSONModel
+@property (nonatomic, readonly, copy) NSNumber *entityId;
+@property (nonatomic, readonly, copy) NSString *uuid;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *classroom;
 
-@property (nonatomic, copy) NSString *entityId;
-@property (nonatomic, copy) NSString *uuid;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString<Optional> *classroom;
+@property (nonatomic, readonly, strong) NSString *startAt;
+@property (nonatomic, readonly, copy) NSString *startTime;
+@property (nonatomic, readonly, strong) NSString *endAt;
+@property (nonatomic, readonly, copy) NSString *endTime;
+@property (nonatomic, readonly, strong) NSArray *weekdays;
 
-@property (nonatomic, strong) NSDate *startAt;
-//@property (nonatomic, copy) NSString *startTime;
-@property (nonatomic, strong) NSDate *endAt;
-//@property (nonatomic, copy) NSString *endTime;
-@property (nonatomic, strong) NSArray *weekdays;
-
-@property (nonatomic, strong) DUNOrganization<Optional> *organization;
-@property (nonatomic, strong) DUNTeacher *teacher;
-@property (nonatomic, strong) NSArray<DUNEvent, Optional> *events;
-@property (nonatomic, strong) NSArray<DUNStudent, Optional> *students;
+@property (nonatomic, readonly, strong) DUNOrganization *organization;
+@property (nonatomic, readonly, strong) DUNTeacher *teacher;
+@property (nonatomic, readonly, strong) NSArray *events;
+@property (nonatomic, readonly, strong) NSArray *students;
 
 @end

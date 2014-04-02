@@ -1,24 +1,26 @@
 #import "DUNTimelineUserMessage.h"
+#import "DUNStudent.h"
+
+#import <ISO8601DateFormatter/ISO8601DateFormatter.h>
 
 @implementation DUNTimelineUserMessage
 
-
-+ (instancetype) initWithContent:(NSString*)content
+- (instancetype) initWithContent:(NSString*)content
 {
-  DUNTimelineUserMessage *instance = [DUNTimelineUserMessage new];
-  instance.content = content;
+  self = [DUNTimelineUserMessage init];
+  _content = content;
   
-  return instance;
+  return self;
 }
 
 - (void) addOneUpVote
 {
-  self.upVotes = [NSNumber numberWithInt:[self.upVotes intValue] + 1];
+  _upVotes = [NSNumber numberWithInt:[self.upVotes intValue] + 1];
 }
 
 - (void) addOneDownVote
 {
-  self.downVotes = [NSNumber numberWithInt:[self.downVotes intValue] + 1];
+  _downVotes = [NSNumber numberWithInt:[self.downVotes intValue] + 1];
 }
 
 - (BOOL)alreadyUpVoted
@@ -31,15 +33,29 @@
   return [_alreadyVoted isEqualToString:@"down"];
 }
 
-+(JSONKeyMapper*)keyMapper
+#pragma  mark -
+#pragma  mark - Mantle JSON Serializer
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-  return [[JSONKeyMapper alloc] initWithDictionary:@{@"id": @"entityId",
-                                                     @"student" : @"owner",
-                                                     @"created_at":@"sentAt",
-                                                     @"up_votes" : @"upVotes",
-                                                     @"down_votes" : @"downVotes",
-                                                     @"already_voted":@"alreadyVoted"
-                                                }];
+  return  @{@"entityId":@"id",
+            @"owner":@"student",
+            @"sentAt":@"created_at",
+            @"upVotes":@"up_votes",
+            @"downVotes":@"down_votes",
+            @"alreadyVoted":@"already_voted"};
+}
+
++ (NSValueTransformer *)sentAtJSONTransformer {
+  ISO8601DateFormatter *formatter = [[ISO8601DateFormatter alloc] init];
+  
+  return [MTLValueTransformer transformerWithBlock:^id(id str) {
+    return [formatter dateFromString:str];
+  }];
+}
+
++ (NSValueTransformer *)ownerJSONTransformer {
+  return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:DUNStudent.class];
 }
 
 @end

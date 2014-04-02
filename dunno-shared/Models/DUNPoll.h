@@ -1,15 +1,10 @@
-#import "JSONModel.h"
+#import <Mantle/Mantle.h>
 
-@protocol DUNPollOption;
+@interface DUNPoll : MTLModel<MTLJSONSerializing>
 
-@protocol DUNPoll
-@end
+@property (nonatomic, readonly, copy) NSString *uuid;
+@property (nonatomic, readonly, copy) NSString *content;
 
-@interface DUNPoll : JSONModel
-
-@property (nonatomic, copy) NSString *uuid;
-@property (nonatomic, copy) NSString *content;
-
-@property (nonatomic, strong) NSArray<DUNPollOption> *options;
+@property (nonatomic, readonly, strong) NSArray *options;
 
 @end

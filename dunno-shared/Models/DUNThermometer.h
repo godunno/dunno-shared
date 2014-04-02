@@ -1,12 +1,8 @@
-#import "JSONModel.h"
+#import <Mantle/Mantle.h>
 
-@protocol DUNThermometer
-@end
+@interface DUNThermometer : MTLModel<MTLJSONSerializing>
 
-@interface DUNThermometer : JSONModel
-
-@property (nonatomic, copy) NSString *uuid;
-@property (nonatomic, copy) NSString *content;
-
+@property (nonatomic, readonly, copy) NSString *uuid;
+@property (nonatomic, readonly, copy) NSString *content;
 
 @end

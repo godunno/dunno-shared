@@ -1,12 +1,10 @@
-#import "JSONModel.h"
+#import <Mantle/Mantle.h>
 
-@protocol DUNCourse;
+@interface DUNOrganization : MTLModel<MTLJSONSerializing>
 
-@interface DUNOrganization : JSONModel
+@property (nonatomic, readonly, copy) NSString *uuid;
+@property (nonatomic, readonly, copy) NSString *name;
 
-@property (nonatomic, copy) NSString *uuid;
-@property (nonatomic, copy) NSString *name;
-
-@property (nonatomic, strong) NSArray<DUNCourse, Optional> *courses;
+@property (nonatomic, readonly, strong) NSArray *courses;
 
 @end

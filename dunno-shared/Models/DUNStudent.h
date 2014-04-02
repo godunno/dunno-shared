@@ -1,14 +1,13 @@
-#import "DUNUser.h"
+#import <Mantle/Mantle.h>
 
-@protocol DUNEvent;
+@interface DUNStudent : MTLModel<MTLJSONSerializing>
 
-@protocol DUNStudent
-@end
+@property (nonatomic, readonly, copy) NSNumber *entityId;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *email;
+@property (nonatomic, readonly, copy) NSString * avatarURLString;
+@property (nonatomic, readonly, copy) NSString *authToken;
 
-@interface DUNStudent : DUNUser
-
-@property (nonatomic, copy) NSString<Optional> * avatarURLString;
-@property (nonatomic, copy) NSString<Optional> *authToken;
-@property (nonatomic, strong) NSArray<DUNEvent, Optional> *events;
+@property (nonatomic, readonly, strong) NSArray *events;
 
 @end

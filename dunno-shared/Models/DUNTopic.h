@@ -1,11 +1,8 @@
-#import "JSONModel.h"
+#import <Mantle/Mantle.h>
 
-@protocol DUNTopic
-@end
+@interface DUNTopic : MTLModel<MTLJSONSerializing>
 
-@interface DUNTopic : JSONModel
-
-@property (nonatomic, copy) NSString *entityId;
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly, copy) NSNumber *entityId;
+@property (nonatomic, readonly, copy) NSString *title;
 
 @end

@@ -16,7 +16,6 @@
 		C330421818D8E7F800AAE7C2 /* DUNTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420118D8E7F800AAE7C2 /* DUNTeacher.m */; };
 		C330421918D8E7F800AAE7C2 /* DUNThermometer.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420318D8E7F800AAE7C2 /* DUNThermometer.m */; };
 		C330421A18D8E7F800AAE7C2 /* DUNTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420518D8E7F800AAE7C2 /* DUNTopic.m */; };
-		C330421B18D8E7F800AAE7C2 /* DUNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420718D8E7F800AAE7C2 /* DUNUser.m */; };
 		C330421C18D8E7F800AAE7C2 /* DUNTimeline.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */; };
 		C330421E18D8E7F800AAE7C2 /* DUNTimelinePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */; };
 		C330421F18D8E7F800AAE7C2 /* DUNTimelineRating.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */; };
@@ -77,8 +76,6 @@
 		C330420318D8E7F800AAE7C2 /* DUNThermometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNThermometer.m; sourceTree = "<group>"; };
 		C330420418D8E7F800AAE7C2 /* DUNTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTopic.h; sourceTree = "<group>"; };
 		C330420518D8E7F800AAE7C2 /* DUNTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTopic.m; sourceTree = "<group>"; };
-		C330420618D8E7F800AAE7C2 /* DUNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNUser.h; sourceTree = "<group>"; };
-		C330420718D8E7F800AAE7C2 /* DUNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNUser.m; sourceTree = "<group>"; };
 		C330420918D8E7F800AAE7C2 /* DUNTimeline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimeline.h; sourceTree = "<group>"; };
 		C330420A18D8E7F800AAE7C2 /* DUNTimeline.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimeline.m; sourceTree = "<group>"; };
 		C330420D18D8E7F800AAE7C2 /* DUNTimelinePoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelinePoll.h; sourceTree = "<group>"; };
@@ -155,8 +152,6 @@
 				C33041FF18D8E7F800AAE7C2 /* DUNStudent.m */,
 				C330420018D8E7F800AAE7C2 /* DUNTeacher.h */,
 				C330420118D8E7F800AAE7C2 /* DUNTeacher.m */,
-				C330420618D8E7F800AAE7C2 /* DUNUser.h */,
-				C330420718D8E7F800AAE7C2 /* DUNUser.m */,
 				C330420818D8E7F800AAE7C2 /* Timeline */,
 			);
 			path = Models;
@@ -431,7 +426,6 @@
 				C330421918D8E7F800AAE7C2 /* DUNThermometer.m in Sources */,
 				C330421718D8E7F800AAE7C2 /* DUNStudent.m in Sources */,
 				C37ABE6718E375E6004C5695 /* DUNPusher.m in Sources */,
-				C330421B18D8E7F800AAE7C2 /* DUNUser.m in Sources */,
 				C3C04DBD18DB5EBB00919883 /* DUNCourse.m in Sources */,
 				C330421A18D8E7F800AAE7C2 /* DUNTopic.m in Sources */,
 				C37ABE6818E375E6004C5695 /* NSString+Cool.m in Sources */,

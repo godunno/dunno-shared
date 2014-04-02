@@ -1,6 +1,10 @@
 #import "DUNTeacher.h"
+#import "DUNCourse.h"
 
 @implementation DUNTeacher
+
+#pragma  mark -
+#pragma  mark - Mantle JSON Serializer
 
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
@@ -9,6 +13,10 @@
             @"avatarURLString": @"avatar",
             @"authToken":@"authentication_token",
             };
+}
+
++ (NSValueTransformer *)coursesJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNCourse.class];
 }
 
 @end

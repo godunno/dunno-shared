@@ -1,16 +1,37 @@
 #import "DUNCourse.h"
+#import "DUNEvent.h"
+#import "DUNStudent.h"
 
 @implementation DUNCourse
 
-+(JSONKeyMapper*)keyMapper
+#pragma  mark -
+#pragma  mark - Mantle JSON Serializer
+
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-  return [[JSONKeyMapper alloc] initWithDictionary:@{
-              @"id": @"entityId",
-              @"start_date": @"startAt",
-//              @"start_time": @"startTime",
-              @"end_date": @"endAt",
-//              @"end_time": @"endTime",
-         }];
+  return  @{
+            @"entityId": @"id",
+            @"startAt":@"start_date",
+            @"startTime": @"start_time",
+            @"endAt": @"end_date",
+            @"endTime":@"end_time",
+            };
+}
+
++ (NSValueTransformer *)eventsJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNEvent.class];
+}
+
++ (NSValueTransformer *)teacherJSONTransformer {
+  return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:DUNTeacher.class];
+}
+
++ (NSValueTransformer *)organizationJSONTransformer {
+  return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:DUNOrganization.class];
+}
+
++ (NSValueTransformer *)studentsJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNStudent.class];
 }
 
 @end

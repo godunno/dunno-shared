@@ -1,16 +1,22 @@
 #import "DUNStudent.h"
+#import "DUNEvent.h"
 
 @implementation DUNStudent
 
+#pragma  mark -
+#pragma  mark - Mantle JSON Serializer
 
-+(JSONKeyMapper*)keyMapper
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-  return [[JSONKeyMapper alloc] initWithDictionary:
-          @{@"id": @"entityId",
-            @"avatar" : @"avatarURLString",
-            @"authentication_token" : @"authToken",
-            }
-          ];
+  return @{@"entityId":@"id",
+           @"avatarURLString":@"avatar",
+           @"authToken":@"authentication_token",
+           };
 }
+
++ (NSValueTransformer *)eventsJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNEvent.class];
+}
+
 
 @end

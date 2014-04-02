@@ -1,9 +1,9 @@
-#import "JSONModel.h"
+#import <Mantle/Mantle.h>
 
-@interface DUNTimelinePoll : JSONModel
+@interface DUNTimelinePoll : MTLModel<MTLJSONSerializing>
 
-@property (nonatomic, copy) NSString *question;
+@property (nonatomic, readonly, copy) NSString *question;
 
-@property (nonatomic, strong) NSArray *options;
+@property (nonatomic, readonly, strong) NSArray *options;
 
 @end

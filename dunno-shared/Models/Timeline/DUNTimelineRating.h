@@ -1,8 +1,8 @@
-#import "JSONModel.h"
+#import <Mantle/Mantle.h>
 
-@interface DUNTimelineRating : JSONModel
+@interface DUNTimelineRating : MTLModel<MTLJSONSerializing>
 
-@property (nonatomic, copy) NSString *question;
+@property (nonatomic, readonly, copy) NSString *question;
 
 @property (nonatomic, assign) float rating;
 

@@ -1,42 +1,68 @@
 #import "DUNEvent.h"
+#import "DUNTopic.h"
+#import "DUNThermometer.h"
+#import "DUNPoll.h"
+#import "DUNTimeline.h"
+
+#import <ISO8601DateFormatter/ISO8601DateFormatter.h>
 
 @implementation DUNEvent
 
+#pragma  mark -
+#pragma  mark - Mantle JSON Serializer
 
-- (BOOL) isOpen
++ (NSDictionary *)JSONKeyPathsByPropertyKey
 {
-  return true;
+  return  @{
+            @"startAt" : @"start_at",
+            @"channelName" : @"channel",
+            @"releasePollEvent" : @"release_poll_event",
+            @"closeEvent" : @"close_event",
+            @"studentMessageEvent" : @"student_message_event",
+            @"upDownVoteMessageEvent" : @"up_down_vote_message_event",
+            @"upDownVoteMessageEvent" : @"up_down_vote_message_event",
+          };
 }
 
-- (BOOL) isClosed
++ (NSValueTransformer *)statusJSONTransformer
 {
-  return false;
+  return [MTLValueTransformer transformerWithBlock:^id(id inObj) {
+    if([(NSString*)inObj isEqualToString:@"opened"])
+      return @(DUNEventOpened);
+    else if([(NSString*)inObj isEqualToString:@"closed"])
+      return @(DUNEventClosed);
+    else
+      return @(DUNEventAvailable);
+  }];
 }
 
--(void)setStatusWithNSString:(NSString*)statusString
-{
-  if([statusString isEqualToString:@"closed"])
-  {
-    _status = DUNEventClosed;
-  } else if([statusString isEqualToString:@"opened"]){
-    _status = DUNEventOpened;
-  } else {
-    _status = DUNEventAvailable;
-  }
++ (NSValueTransformer *)startAtJSONTransformer {
+  ISO8601DateFormatter *formatter = [[ISO8601DateFormatter alloc] init];
+
+  return [MTLValueTransformer transformerWithBlock:^id(id str) {
+    return [formatter dateFromString:str];
+  }];
 }
 
-+(JSONKeyMapper*)keyMapper
-{
-  
-  return [[JSONKeyMapper alloc] initWithDictionary:@{
-                                                     @"start_at": @"startAt",
-                                                     @"channel": @"channelName",
-                                                     @"release_poll_event": @"releasePollEvent",
-                                                     @"close_event": @"closeEvent",
-                                                     @"student_message_event": @"studentMessageEvent",
-                                                     @"up_down_vote_message_event": @"upDownVoteMessageEvent",
-                                                     @"up_down_vote_message_event": @"upDownVoteMessageEvent",
-                                                     }];
++ (NSValueTransformer *)timelineJSONTransformer {
+  return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:DUNTimeline.class];
+}
+
++ (NSValueTransformer *)courseJSONTransformer {
+  return [NSValueTransformer mtl_JSONDictionaryTransformerWithModelClass:DUNCourse.class];
+}
+
++ (NSValueTransformer *)topicsJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNTopic.class];
+}
+
++ (NSValueTransformer *)thermometersJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNThermometer.class];
+}
+
++ (NSValueTransformer *)pollsJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNPoll.class];
 }
 
 @end
+

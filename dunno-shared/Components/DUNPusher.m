@@ -1,6 +1,5 @@
 #import "DUNPusher.h"
 #import "DUNConfig.h"
-#import <Reachability/Reachability.h>
 
 @interface DUNPusher()
 @property (strong, nonatomic) PTPusher *client;
@@ -37,6 +36,8 @@
 
 - (void) subscribeToChannelNamed:(NSString*)channelName withEventNamed:(NSString*)eventName handleWithBlock:(DUNPusherEventBlockHandler)handler
 {
+  NSParameterAssert(channelName!=nil);
+  NSParameterAssert(eventName!=nil);
   
   PTPusherChannel *channel = [_client subscribeToChannelNamed:channelName];
   
@@ -65,6 +66,8 @@
 
 - (void) unsubscribe:(NSString*)channelName
 {
+  NSParameterAssert(channelName!=nil);
+  
   PTPusherChannel *channel = [_client subscribeToChannelNamed:channelName];
   [channel unsubscribe];
 }

@@ -6,13 +6,10 @@ xcodeproj "dunno-shared"
 
 target "dunno-shared" do
   
-  #dates
   pod 'ISO8601DateFormatter', '~> 0.7'
   pod 'NSDate+Calendar'
   
-  #other
   pod 'Mantle'
-  pod 'JSONModel'
   pod 'libPusher', '~> 1.4'
 end
 

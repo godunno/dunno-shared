@@ -2,10 +2,13 @@
 
 @implementation DUNTopic
 
-+(JSONKeyMapper*)keyMapper
-{
-  return [[JSONKeyMapper alloc] initWithDictionary:@{@"id": @"entityId", @"description" : @"title"}];
-}
+#pragma  mark -
+#pragma  mark - Mantle JSON Serializer
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+  return @{@"entityId":@"id",
+           @"title": @"description"};
+}
 
 @end
