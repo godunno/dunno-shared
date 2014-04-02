@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
   s.source_files  = 'dunno-shared', 'dunno-shared/**/*.{h,m}'
   s.public_header_files = 'dunno-shared/**/*.h'
 
-  s.dependency 'JSONModel'
-  s.dependency 'Mantle'  
+  s.dependency 'Mantle'
   s.dependency 'libPusher'
-  s.dependency 'Reachability'
+  s.dependency 'ISO8601DateFormatter'
 
 end

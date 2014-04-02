@@ -5,8 +5,7 @@ inhibit_all_warnings!
 xcodeproj "dunno-shared"
 
 target "dunno-shared" do
-  
-  pod 'ISO8601DateFormatter', '~> 0.7'
+  pod 'ISO8601DateFormatter'
   pod 'NSDate+Calendar'
   
   pod 'Mantle'
@@ -14,8 +13,8 @@ target "dunno-shared" do
 end
 
 target "dunno-sharedTests" do
-  pod 'Specta',      '~> 0.2.1'
-  pod 'Expecta',     '~> 0.2.3'
-  pod 'OCMockito',   '~> 1.0.0'
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'OCMockito'
 end
 
