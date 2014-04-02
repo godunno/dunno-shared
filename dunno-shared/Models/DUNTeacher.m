@@ -3,6 +3,16 @@
 
 @implementation DUNTeacher
 
+- (NSArray*)events
+{
+  NSMutableArray *events = [NSMutableArray array];
+  [_courses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    [events addObjectsFromArray:((DUNCourse*)obj).events];
+  }];
+  
+  return events;
+}
+
 #pragma  mark -
 #pragma  mark - Mantle JSON Serializer
 
