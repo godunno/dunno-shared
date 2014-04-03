@@ -21,17 +21,21 @@
 {
   self = [super init];
   if (self) {
-    [self _setup];
+    [self setup];
   }
   return self;
 }
 
-#pragma mark - Pusher
-
-- (void)_setup
+- (void)setup
 {
   _client = [PTPusher pusherWithKey:PUSHER_ACCESS_KEY delegate:self encrypted:NO];
   _client.reconnectDelay = 3.0;
+}
+
+- (DUNPusher*) connect
+{
+  [self.client connect];
+  return self;
 }
 
 - (void) subscribeToChannelNamed:(NSString*)channelName withEventNamed:(NSString*)eventName handleWithBlock:(DUNPusherEventBlockHandler)handler
@@ -43,21 +47,11 @@
   
   [channel bindToEventNamed:eventName handleWithBlock:^(PTPusherEvent *channelEvent) {
     
-    // channelEvent.data is a NSDictionary of the JSON object received.
-    // convert back to json
-    NSError *error;
-    
     if (!channelEvent.data) {
-      NSLog(@"Pusher error on receive message: %@", error);
+      NSLog(@"Pusher error on receive message on %@:::%@ ",channelName,channelEvent);
       handler(nil);
-      
     } else {
-       NSLog(@"Pusher received message (type: %@)",[channelEvent.data class]);
-
-      if ([[channelEvent.data class] isKindOfClass:[NSDictionary class]]) {
-        
-      }
-      
+      NSLog(@"Pusher received message %@:::%@ (type: %@)",channelName,channelEvent,[channelEvent.data class]);
       handler(channelEvent.data);
     }
   }];
@@ -71,17 +65,6 @@
   PTPusherChannel *channel = [_client subscribeToChannelNamed:channelName];
   [channel unsubscribe];
 }
-
-/////////////////////////////////
-#pragma mark - Public API
-/////////////////////////////////
-
-- (DUNPusher*) connect
-{
-  [self.client connect];
-  return self;
-}
-
 
 
 @end
