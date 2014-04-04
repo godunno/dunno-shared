@@ -5,7 +5,7 @@
 
 #import "DUNEvent.h"
 
-SpecBegin(StudentSpec)
+SpecBegin(DUNStudent)
 
 context(@"mapping json from dictionary", ^{
 
