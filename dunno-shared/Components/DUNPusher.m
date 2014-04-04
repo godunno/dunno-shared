@@ -7,10 +7,10 @@
 
 @implementation DUNPusher
 
-+ (DUNPusher*) sharedInstance
++ (instancetype) sharedInstance
 {
   static dispatch_once_t p = 0;
-  __strong static id sharedObject = nil;
+  __strong static DUNPusher *sharedObject = nil;
   dispatch_once(&p, ^{
     sharedObject = [[self alloc] init];
   });
