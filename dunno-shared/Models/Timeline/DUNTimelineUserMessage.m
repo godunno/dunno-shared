@@ -7,8 +7,10 @@
 
 - (instancetype) initWithContent:(NSString*)content
 {
-  self = [DUNTimelineUserMessage init];
-  _content = content;
+  if((self = [super init]))
+  {
+    _content = content;
+  }
   
   return self;
 }
