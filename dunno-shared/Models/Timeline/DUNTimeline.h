@@ -1,6 +1,6 @@
 #import <Mantle/Mantle.h>
 
-@class DUNTimelineUserMessage;
+#import "DUNTimelineUserMessage.h"
 
 @interface DUNTimeline : MTLModel<MTLJSONSerializing>
 

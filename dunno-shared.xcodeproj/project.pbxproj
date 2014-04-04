@@ -22,7 +22,7 @@
 		C330422018D8E7F800AAE7C2 /* DUNTimelineUserMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */; };
 		C37ABE6718E375E6004C5695 /* DUNPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6418E375E6004C5695 /* DUNPusher.m */; };
 		C37ABE6818E375E6004C5695 /* NSString+Cool.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6618E375E6004C5695 /* NSString+Cool.m */; };
-		C39C9C1518E4C59C005680EF /* StudentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C39C9C1418E4C59C005680EF /* StudentSpec.m */; };
+		C39C9C1518E4C59C005680EF /* DUNStudentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C39C9C1418E4C59C005680EF /* DUNStudentSpec.m */; };
 		C39C9C1918E4C7F2005680EF /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C39C9C1618E4C797005680EF /* libicucore.dylib */; };
 		C3C04DBD18DB5EBB00919883 /* DUNCourse.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C04DBC18DB5EBB00919883 /* DUNCourse.m */; };
 		C3F568B418D769E500126A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B318D769E500126A3C /* Foundation.framework */; };
@@ -89,7 +89,7 @@
 		C37ABE6518E375E6004C5695 /* NSString+Cool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Cool.h"; sourceTree = "<group>"; };
 		C37ABE6618E375E6004C5695 /* NSString+Cool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Cool.m"; sourceTree = "<group>"; };
 		C37ABE6C18E37768004C5695 /* DUNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNConfig.h; sourceTree = "<group>"; };
-		C39C9C1418E4C59C005680EF /* StudentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentSpec.m; sourceTree = "<group>"; };
+		C39C9C1418E4C59C005680EF /* DUNStudentSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNStudentSpec.m; sourceTree = "<group>"; };
 		C39C9C1618E4C797005680EF /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		C3C04DBB18DB5EBB00919883 /* DUNCourse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNCourse.h; sourceTree = "<group>"; };
 		C3C04DBC18DB5EBB00919883 /* DUNCourse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNCourse.m; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 		C39C9C1018E4C52C005680EF /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C39C9C1418E4C59C005680EF /* StudentSpec.m */,
+				C39C9C1418E4C59C005680EF /* DUNStudentSpec.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -441,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39C9C1518E4C59C005680EF /* StudentSpec.m in Sources */,
+				C39C9C1518E4C59C005680EF /* DUNStudentSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
