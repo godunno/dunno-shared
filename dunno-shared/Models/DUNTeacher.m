@@ -21,16 +21,13 @@
     DUNCourse *c = obj;
     [c.events enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
       DUNEvent *e = obj;
-      NSLog(@"%@ => %@",e.uuid,event.uuid);
       if([e.uuid isEqualToString:event.uuid])
       {
         [c.events replaceObjectAtIndex:idx withObject:event];
         return;
       }
     }];
-// asdasdsa
   }];
-  // sadasddsa
 }
 
 #pragma  mark -
