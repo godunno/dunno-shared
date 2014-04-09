@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, DUNEventStatus) {
 @property (nonatomic, readonly, strong) DUNCourse *course;
 @property (nonatomic, readonly, strong) NSArray *topics;
 @property (nonatomic, readonly, strong) NSArray *thermometers;
-@property (nonatomic, readonly, strong) NSArray *polls;
+@property (nonatomic, strong) NSMutableArray *polls;
 
 //pusher properties
 @property (nonatomic, readonly, copy) NSString *channelName;
