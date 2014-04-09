@@ -13,7 +13,7 @@ typedef NS_ENUM(NSInteger, DUNEventStatus) {
 
 @property (nonatomic, readonly, copy) NSString *uuid;
 @property (nonatomic, readonly, copy) NSString *title;
-@property (nonatomic, readonly, assign) DUNEventStatus status;
+@property (nonatomic, assign) DUNEventStatus status;
 @property (nonatomic, readonly, copy) NSString *duration;
 @property (nonatomic, readonly, strong) NSDate *startAt;
 

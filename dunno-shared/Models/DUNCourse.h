@@ -18,7 +18,7 @@
 
 @property (nonatomic, readonly, strong) DUNOrganization *organization;
 @property (nonatomic, readonly, strong) DUNTeacher *teacher;
-@property (nonatomic, readonly, strong) NSArray *events;
+@property (nonatomic, readonly, strong) NSMutableArray *events;
 @property (nonatomic, readonly, strong) NSArray *students;
 
 @end

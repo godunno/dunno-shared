@@ -1,5 +1,7 @@
 #import <Mantle/Mantle.h>
 
+@class DUNEvent;
+
 @interface DUNTeacher : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, readonly, copy) NSNumber *entityId;
@@ -11,5 +13,7 @@
 @property (nonatomic, readonly, strong) NSArray *courses;
 
 - (NSArray*)events;
+
+- (void) updateEvent:(DUNEvent*)event;
 
 @end

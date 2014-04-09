@@ -1,5 +1,6 @@
 #import "DUNTeacher.h"
 #import "DUNCourse.h"
+#import "DUNEvent.h"
 
 @implementation DUNTeacher
 
@@ -11,6 +12,25 @@
   }];
   
   return events;
+}
+
+- (void) updateEvent:(DUNEvent*)event
+{
+  NSMutableArray *events = [NSMutableArray array];
+  [_courses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    DUNCourse *c = obj;
+    [c.events enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+      DUNEvent *e = obj;
+      NSLog(@"%@ => %@",e.uuid,event.uuid);
+      if([e.uuid isEqualToString:event.uuid])
+      {
+        [c.events replaceObjectAtIndex:idx withObject:event];
+        return;
+      }
+    }];
+// asdasdsa
+  }];
+  // sadasddsa
 }
 
 #pragma  mark -
