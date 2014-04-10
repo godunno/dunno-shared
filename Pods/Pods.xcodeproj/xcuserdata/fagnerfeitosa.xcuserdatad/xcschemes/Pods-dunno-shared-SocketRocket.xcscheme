@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF663652355545E18468468D"
+               BlueprintIdentifier = "6CAB2CF8120C483892F351E9"
                BuildableName = "libPods-dunno-shared-SocketRocket.a"
                BlueprintName = "Pods-dunno-shared-SocketRocket"
                ReferencedContainer = "container:Pods.xcodeproj">

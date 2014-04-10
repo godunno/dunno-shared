@@ -17,7 +17,7 @@ PODS:
 
 DEPENDENCIES:
   - Expecta
-  - ISO8601DateFormatter (~> 0.7)
+  - ISO8601DateFormatter
   - libPusher (~> 1.4)
   - Mantle
   - NSDate+Calendar
