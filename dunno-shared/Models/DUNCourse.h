@@ -1,7 +1,7 @@
+#import <Mantle/Mantle.h>
+
 #import "DUNTeacher.h"
 #import "DUNOrganization.h"
-
-#import <Mantle/Mantle.h>
 
 @interface DUNCourse :  MTLModel<MTLJSONSerializing>
 

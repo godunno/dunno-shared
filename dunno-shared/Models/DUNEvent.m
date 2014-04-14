@@ -2,6 +2,7 @@
 #import "DUNTopic.h"
 #import "DUNThermometer.h"
 #import "DUNPoll.h"
+#import "DUNMedia.h"
 #import "DUNTimeline.h"
 
 #import <ISO8601DateFormatter/ISO8601DateFormatter.h>
@@ -62,6 +63,10 @@
 
 + (NSValueTransformer *)pollsJSONTransformer {
   return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNPoll.class];
+}
+
++ (NSValueTransformer *)mediasJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNMedia.class];
 }
 
 @end
