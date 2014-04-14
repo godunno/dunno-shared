@@ -18,9 +18,9 @@
             @"startAt" : @"start_at",
             @"channelName" : @"channel",
             @"releasePollEvent" : @"release_poll_event",
+            @"releaseMediaEvent" : @"release_media_event",
             @"closeEvent" : @"close_event",
             @"studentMessageEvent" : @"student_message_event",
-            @"upDownVoteMessageEvent" : @"up_down_vote_message_event",
             @"upDownVoteMessageEvent" : @"up_down_vote_message_event",
           };
 }

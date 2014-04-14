@@ -30,5 +30,6 @@ typedef NS_ENUM(NSInteger, DUNEventStatus) {
 @property (nonatomic, readonly, copy) NSString *upDownVoteMessageEvent;
 @property (nonatomic, readonly, copy) NSString *closeEvent;
 @property (nonatomic, readonly, copy) NSString *releasePollEvent;
+@property (nonatomic, readonly, copy) NSString *releaseMediaEvent;
 
 @end
