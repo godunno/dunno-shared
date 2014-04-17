@@ -1,5 +1,5 @@
 #import "DUNStudent.h"
-#import "DUNEvent.h"
+#import "DUNCourse.h"
 
 @implementation DUNStudent
 
@@ -14,9 +14,18 @@
            };
 }
 
-+ (NSValueTransformer *)eventsJSONTransformer {
-  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNEvent.class];
++ (NSValueTransformer *)coursesJSONTransformer {
+  return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:DUNCourse.class];
 }
 
+
+- (NSArray*)allEvents
+{
+  NSMutableArray *events = [NSMutableArray array];
+  [_courses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    [events addObjectsFromArray:((DUNCourse*)obj).events];
+  }];
+  return events;
+}
 
 @end
