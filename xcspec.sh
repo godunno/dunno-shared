@@ -4,4 +4,5 @@ if ! type "xctool" > /dev/null; then
   exit 1;
 fi
 
-xctool -workspace `pwd`/dunno-shared.xcworkspace -scheme dunno-shared test -sdk iphonesimulator 
+current_directory=${PWD##*/}
+xctool -workspace `pwd`/${current_directory}.xcworkspace -scheme ${current_directory} test -sdk iphonesimulator 
