@@ -1,10 +1,6 @@
 #import "DUNPusher.h"
 #import "DUNConfig.h"
 
-@interface DUNPusher()
-@property (strong, nonatomic) PTPusher *client;
-@end
-
 @implementation DUNPusher
 
 + (instancetype) sharedInstance
@@ -17,25 +13,14 @@
   return sharedObject;
 }
 
-- (id)init
+- (PTPusher *)client
 {
-  self = [super init];
-  if (self) {
-    [self setup];
+  if(_client==nil) {
+    _client = [PTPusher pusherWithKey:PUSHER_ACCESS_KEY delegate:self encrypted:NO];
+    _client.reconnectDelay = 3.0;
   }
-  return self;
-}
-
-- (void)setup
-{
-  _client = [PTPusher pusherWithKey:PUSHER_ACCESS_KEY delegate:self encrypted:NO];
-  _client.reconnectDelay = 3.0;
-}
-
-- (DUNPusher*) connect
-{
-  [self.client connect];
-  return self;
+  
+  return _client;
 }
 
 - (void) subscribeToChannelNamed:(NSString*)channelName withEventNamed:(NSString*)eventName handleWithBlock:(DUNPusherEventBlockHandler)handler
@@ -43,7 +28,10 @@
   NSParameterAssert(channelName!=nil);
   NSParameterAssert(eventName!=nil);
   
-  PTPusherChannel *channel = [_client subscribeToChannelNamed:channelName];
+  if(self.client.connection==nil)
+    [self.client connect];
+  
+  PTPusherChannel *channel = [self.client subscribeToChannelNamed:channelName];
   
   [channel bindToEventNamed:eventName handleWithBlock:^(PTPusherEvent *channelEvent) {
     
@@ -61,8 +49,11 @@
 - (void) unsubscribe:(NSString*)channelName
 {
   NSParameterAssert(channelName!=nil);
+
+  if(self.client.connection==nil)
+    [self.client connect];
   
-  PTPusherChannel *channel = [_client subscribeToChannelNamed:channelName];
+  PTPusherChannel *channel = [self.client subscribeToChannelNamed:channelName];
   [channel unsubscribe];
 }
 

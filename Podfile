@@ -16,5 +16,7 @@ target "dunno-sharedTests" do
   pod 'Specta'
   pod 'Expecta'
   pod 'OCMockito'
+  pod 'OCHamcrest'  
+  pod 'OCMock'
 end
 

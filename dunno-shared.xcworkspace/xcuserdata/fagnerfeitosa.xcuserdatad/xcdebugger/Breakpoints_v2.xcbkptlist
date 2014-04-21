@@ -15,38 +15,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "9"
             endingLineNumber = "9"
-            landmarkName = "+JSONKeyPathsByPropertyKey"
+            landmarkName = "-events"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[DUNTeacher events]"
-                  moduleName = "dunno-sharedTests"
-                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-shared/dunno-shared/Models/DUNTeacher.m"
-                  timestampString = "418190846.704149"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "58">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__20-[DUNTeacher events]_block_invoke"
-                  moduleName = "dunno-sharedTests"
-                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-shared/dunno-shared/Models/DUNTeacher.m"
-                  timestampString = "418190846.705042"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "9"
-                  endingLineNumber = "9"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,6 +33,66 @@
             endingLineNumber = "13"
             landmarkName = "@interface DUNTimeline"
             landmarkType = "2">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-shared/Components/DUNPusher.h"
+            timestampString = "419451594.828604"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1"
+            endingLineNumber = "1">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DUNPusher client]"
+                  moduleName = "dunno-sharedTests"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-shared/dunno-shared/Components/DUNPusher.h"
+                  timestampString = "419452092.248378"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DUNPusher setClient:]"
+                  moduleName = "dunno-sharedTests"
+                  urlString = "file:///Users/fagnerfeitosa/Development/projects/dunno-shared/dunno-shared/Components/DUNPusher.h"
+                  timestampString = "419452092.24863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dunno-shared/Components/DUNPusher.m"
+            timestampString = "419454942.146544"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "-subscribeToChannelNamed:withEventNamed:handleWithBlock:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

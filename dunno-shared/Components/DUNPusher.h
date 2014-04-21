@@ -4,9 +4,9 @@ typedef void (^DUNPusherEventBlockHandler)(NSDictionary *jsonDictionary);
 
 @interface DUNPusher : NSObject<PTPusherDelegate>
 
-+ (DUNPusher*) sharedInstance;
+@property (strong, nonatomic) PTPusher *client;
 
-- (DUNPusher*) connect;
++ (DUNPusher*) sharedInstance;
 
 - (void) unsubscribe:(NSString*)channelName;
 
