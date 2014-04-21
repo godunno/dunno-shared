@@ -3,19 +3,13 @@
 #define EXP_SHORTHAND
 #import "Expecta.h"
 
-#import "DUNEvent.h"
+#import "DUNStudent.h"
 
 SpecBegin(DUNStudent)
 
-context(@"mapping json from dictionary", ^{
+describe(@"properties", ^{
+  __block DUNStudent *student = [DUNStudent new];
 
-  describe(@"optional properties", ^{
-    
-  });
-  
-  describe(@"mandatory properties", ^{
-    
-  });
   
 });
 SpecEnd

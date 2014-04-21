@@ -7,7 +7,8 @@ xcodeproj "dunno-shared"
 target "dunno-shared" do
   pod 'ISO8601DateFormatter'
   pod 'NSDate+Calendar'
-  
+  pod 'ObjectiveSugar'
+  pod 'NSString+Ruby'
   pod 'Mantle'
   pod 'libPusher', '~> 1.4'
 end

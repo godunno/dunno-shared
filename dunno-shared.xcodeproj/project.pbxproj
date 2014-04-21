@@ -32,7 +32,6 @@
 		C3F568C518D769E500126A3C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568C418D769E500126A3C /* UIKit.framework */; };
 		C3F568C818D769E500126A3C /* libdunno-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F568B018D769E500126A3C /* libdunno-shared.a */; };
 		C3F568CE18D769E500126A3C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3F568CC18D769E500126A3C /* InfoPlist.strings */; };
-		C3F7A824190052AA00C40436 /* DUNPusherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F7A823190052AA00C40436 /* DUNPusherSpec.m */; };
 		F84C0875AEC14F96B4E4FF78 /* libPods-dunno-shared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FC22CEA18DF448D9B5C018A /* libPods-dunno-shared.a */; };
 /* End PBXBuildFile section */
 
@@ -105,7 +104,6 @@
 		C3F568C418D769E500126A3C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C3F568CB18D769E500126A3C /* dunno-sharedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dunno-sharedTests-Info.plist"; sourceTree = "<group>"; };
 		C3F568CD18D769E500126A3C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C3F7A823190052AA00C40436 /* DUNPusherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNPusherSpec.m; sourceTree = "<group>"; };
 		C3FEB6B018D7F9B3005B9AE6 /* dunno-shared.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "dunno-shared.podspec"; path = "../dunno-shared.podspec"; sourceTree = "<group>"; };
 		EA55F5BD35C04DD3A225AA28 /* Pods-dunno-sharedTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dunno-sharedTests.xcconfig"; path = "Pods/Pods-dunno-sharedTests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -202,7 +200,6 @@
 		C39C9C1218E4C541005680EF /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C3F7A823190052AA00C40436 /* DUNPusherSpec.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -451,7 +448,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39C9C1518E4C59C005680EF /* DUNStudentSpec.m in Sources */,
-				C3F7A824190052AA00C40436 /* DUNPusherSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
