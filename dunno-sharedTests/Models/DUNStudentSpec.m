@@ -1,4 +1,4 @@
-#import "Specta.h"
+#import <Specta/Specta.h>
 
 #define HC_SHORTHAND
 #import <OCHamcrest/OCHamcrest.h>
@@ -7,7 +7,7 @@
 #import <OCMockito/OCMockito.h>
 
 #define EXP_SHORTHAND
-#import "Expecta.h"
+#import <Expecta/Expecta.h>
 
 #import <Mantle/Mantle.h>
 
@@ -22,10 +22,12 @@ beforeEach(^{
   student = [DUNStudent new];
 });
 
-describe(@"structure", ^{
-  it(@"is a Mantle model", ^{
+describe(@"Mantle model", ^{
+  
+  it(@"extend MTLModel", ^{
     expect([student isKindOfClass:[MTLModel class]]).to.beTruthy();
   });
+  
 });
 
 describe(@"#allEvents", ^{
