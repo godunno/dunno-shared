@@ -32,7 +32,7 @@ describe(@"Mantle model", ^{
 
 describe(@"#events", ^{
   
-  it(@"should collect events from courses property", ^{
+  it(@"should collect events from courses", ^{
     DUNCourse *course = mock(DUNCourse.class);
     [given(course.events) willReturn:@[mock(DUNEvent.class),mock(DUNEvent.class),mock(DUNEvent.class)]];
     DUNCourse *course2 = mock(DUNCourse.class);
