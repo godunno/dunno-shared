@@ -30,7 +30,7 @@ describe(@"Mantle model", ^{
   
 });
 
-describe(@"#allEvents", ^{
+describe(@"#events", ^{
   
   it(@"should collect events from courses property", ^{
     DUNCourse *course = mock(DUNCourse.class);
@@ -39,7 +39,7 @@ describe(@"#allEvents", ^{
     [given(course2.events) willReturn:@[mock(DUNEvent.class),mock(DUNEvent.class),mock(DUNEvent.class)]];
     student.courses = @[course, course2];
     
-    expect([student allEvents].count).to.equal(6);
+    expect([student events].count).to.equal(6);
   });
   
 });

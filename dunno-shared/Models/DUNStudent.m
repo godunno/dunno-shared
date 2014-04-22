@@ -19,7 +19,7 @@
 }
 
 
-- (NSArray*)allEvents
+- (NSArray*)events
 {
   NSMutableArray *events = [NSMutableArray array];
   [_courses enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {

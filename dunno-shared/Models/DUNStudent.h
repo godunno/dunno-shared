@@ -10,6 +10,6 @@
 
 @property (nonatomic, strong) NSArray *courses;
 
-- (NSArray*)allEvents;
+- (NSArray*)events;
 
 @end
