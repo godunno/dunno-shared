@@ -10,6 +10,7 @@
 		348C4864E7F5481D839F8F9D /* libPods-dunno-sharedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F426215ACC4D43AE1A6DA9 /* libPods-dunno-sharedTests.a */; };
 		C31E74A91906EC9A00C1208D /* DUNPusherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C31E74A81906EC9A00C1208D /* DUNPusherSpec.m */; };
 		C31E74AB190702E600C1208D /* DUNEventSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C31E74AA190702E600C1208D /* DUNEventSpec.m */; };
+		C31E74AD190704A000C1208D /* DUNTeacherSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C31E74AC190704A000C1208D /* DUNTeacherSpec.m */; };
 		C330421318D8E7F800AAE7C2 /* DUNEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041F718D8E7F800AAE7C2 /* DUNEvent.m */; };
 		C330421418D8E7F800AAE7C2 /* DUNOrganization.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041F918D8E7F800AAE7C2 /* DUNOrganization.m */; };
 		C330421518D8E7F800AAE7C2 /* DUNPoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C33041FB18D8E7F800AAE7C2 /* DUNPoll.m */; };
@@ -65,6 +66,7 @@
 		69F426215ACC4D43AE1A6DA9 /* libPods-dunno-sharedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dunno-sharedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31E74A81906EC9A00C1208D /* DUNPusherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNPusherSpec.m; sourceTree = "<group>"; };
 		C31E74AA190702E600C1208D /* DUNEventSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEventSpec.m; sourceTree = "<group>"; };
+		C31E74AC190704A000C1208D /* DUNTeacherSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTeacherSpec.m; sourceTree = "<group>"; };
 		C33041F618D8E7F800AAE7C2 /* DUNEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEvent.h; sourceTree = "<group>"; };
 		C33041F718D8E7F800AAE7C2 /* DUNEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEvent.m; sourceTree = "<group>"; };
 		C33041F818D8E7F800AAE7C2 /* DUNOrganization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNOrganization.h; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 			children = (
 				C39C9C1418E4C59C005680EF /* DUNStudentSpec.m */,
 				C31E74AA190702E600C1208D /* DUNEventSpec.m */,
+				C31E74AC190704A000C1208D /* DUNTeacherSpec.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C39C9C1518E4C59C005680EF /* DUNStudentSpec.m in Sources */,
+				C31E74AD190704A000C1208D /* DUNTeacherSpec.m in Sources */,
 				C31E74A91906EC9A00C1208D /* DUNPusherSpec.m in Sources */,
 				C31E74AB190702E600C1208D /* DUNEventSpec.m in Sources */,
 			);

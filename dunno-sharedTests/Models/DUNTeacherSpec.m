@@ -11,6 +11,8 @@
 
 
 #import "DUNTeacher.h"
+#import "DUNCourse.h"
+#import "DUNEvent.h"
 
 SpecBegin(DUNTeacher)
 
@@ -27,6 +29,19 @@ describe(@"Mantle model", ^{
             isKindOfClass:[MTLModel class]]).to.beTruthy();
   });
   
+  describe(@"#events", ^{
+    
+    it(@"should collect events from courses", ^{
+      DUNCourse *course = mock(DUNCourse.class);
+      [given(course.events) willReturn:@[mock(DUNEvent.class),mock(DUNEvent.class),mock(DUNEvent.class)]];
+      DUNCourse *course2 = mock(DUNCourse.class);
+      [given(course2.events) willReturn:@[mock(DUNEvent.class),mock(DUNEvent.class),mock(DUNEvent.class)]];
+      teacher.courses = @[course, course2];
+      
+      expect([teacher events].count).to.equal(6);
+    });
+    
+  });
   
 });
 
