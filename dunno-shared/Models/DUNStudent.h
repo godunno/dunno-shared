@@ -8,8 +8,7 @@
 @property (nonatomic, readonly, copy) NSString * avatarURLString;
 @property (nonatomic, readonly, copy) NSString *authToken;
 
-@property (nonatomic, readonly, strong) NSArray *courses;
-
+@property (nonatomic, strong) NSArray *courses;
 
 - (NSArray*)allEvents;
 
