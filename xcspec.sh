@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 if ! type "xctool" > /dev/null; then
   echo "xctool is required. to install it, type: brew install -v --HEAD xctool"
   exit 1;
@@ -20,8 +20,9 @@ function build_and_test()
   else
     echo "==================="
     echo "File not found (${xcworkspace_file})"
-    echo "Projects should be at the same path"
+    echo "All projects should be at the same path"
     echo "==================="
+    exit 1; 
   fi
 }
 
