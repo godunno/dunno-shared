@@ -23,6 +23,7 @@
 		C330421E18D8E7F800AAE7C2 /* DUNTimelinePoll.m in Sources */ = {isa = PBXBuildFile; fileRef = C330420E18D8E7F800AAE7C2 /* DUNTimelinePoll.m */; };
 		C330421F18D8E7F800AAE7C2 /* DUNTimelineRating.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */; };
 		C330422018D8E7F800AAE7C2 /* DUNTimelineUserMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */; };
+		C3677D97190ACB300057F043 /* DUNEstimote.m in Sources */ = {isa = PBXBuildFile; fileRef = C3677D96190ACB300057F043 /* DUNEstimote.m */; };
 		C37ABE6718E375E6004C5695 /* DUNPusher.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6418E375E6004C5695 /* DUNPusher.m */; };
 		C37ABE6818E375E6004C5695 /* NSString+Cool.m in Sources */ = {isa = PBXBuildFile; fileRef = C37ABE6618E375E6004C5695 /* NSString+Cool.m */; };
 		C39C9C1518E4C59C005680EF /* DUNStudentSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = C39C9C1418E4C59C005680EF /* DUNStudentSpec.m */; };
@@ -91,6 +92,8 @@
 		C330421018D8E7F800AAE7C2 /* DUNTimelineRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelineRating.m; sourceTree = "<group>"; };
 		C330421118D8E7F800AAE7C2 /* DUNTimelineUserMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNTimelineUserMessage.h; sourceTree = "<group>"; };
 		C330421218D8E7F800AAE7C2 /* DUNTimelineUserMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNTimelineUserMessage.m; sourceTree = "<group>"; };
+		C3677D95190ACB300057F043 /* DUNEstimote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNEstimote.h; sourceTree = "<group>"; };
+		C3677D96190ACB300057F043 /* DUNEstimote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNEstimote.m; sourceTree = "<group>"; };
 		C37ABE6318E375E6004C5695 /* DUNPusher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DUNPusher.h; sourceTree = "<group>"; };
 		C37ABE6418E375E6004C5695 /* DUNPusher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DUNPusher.m; sourceTree = "<group>"; };
 		C37ABE6518E375E6004C5695 /* NSString+Cool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Cool.h"; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				C33041FF18D8E7F800AAE7C2 /* DUNStudent.m */,
 				C330420018D8E7F800AAE7C2 /* DUNTeacher.h */,
 				C330420118D8E7F800AAE7C2 /* DUNTeacher.m */,
+				C3677D95190ACB300057F043 /* DUNEstimote.h */,
+				C3677D96190ACB300057F043 /* DUNEstimote.m */,
 				C330420818D8E7F800AAE7C2 /* Timeline */,
 			);
 			path = Models;
@@ -442,6 +447,7 @@
 				C37ABE6718E375E6004C5695 /* DUNPusher.m in Sources */,
 				C3C04DBD18DB5EBB00919883 /* DUNCourse.m in Sources */,
 				C330421A18D8E7F800AAE7C2 /* DUNTopic.m in Sources */,
+				C3677D97190ACB300057F043 /* DUNEstimote.m in Sources */,
 				C37ABE6818E375E6004C5695 /* NSString+Cool.m in Sources */,
 				C330421518D8E7F800AAE7C2 /* DUNPoll.m in Sources */,
 				C330421618D8E7F800AAE7C2 /* DUNPollOption.m in Sources */,
