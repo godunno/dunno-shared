@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6DB191C9078D4C48A7DA428E"
+               BlueprintIdentifier = "1786480A99D6485E957BACB2"
                BuildableName = "libPods-dunno-shared-NSDate+Calendar.a"
                BlueprintName = "Pods-dunno-shared-NSDate+Calendar"
                ReferencedContainer = "container:Pods.xcodeproj">

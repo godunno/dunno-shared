@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-dunno-shared-NSString+Ruby.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-dunno-shared-ObjectiveSugar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-dunno-shared-SocketRocket.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -44,6 +54,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-dunno-sharedTests-OCMock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-dunno-sharedTests-OCMockito.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,57 +77,72 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1D12985E1F844D10997DE1FA</key>
+		<key>03E06DBB90FB453B8CE8E9ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>37026FBEF9B947B9AF0F1890</key>
+		<key>1325B898E7B04250BF2A5703</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3D9B211A58BD4A4C9B7BE95A</key>
+		<key>1786480A99D6485E957BACB2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>413F1BAD34E34175B98D1354</key>
+		<key>2949621E0C18438D9CD9CFFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5A6B333BA8154660B3C60DE7</key>
+		<key>31094C167F534842A3C72D17</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6CAB2CF8120C483892F351E9</key>
+		<key>327CE73F4AA34323B5582BD7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6DB191C9078D4C48A7DA428E</key>
+		<key>39C3B9D939074668A1B89128</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79F948288D8A446E9D55721D</key>
+		<key>4EFDDD11D1A546D996EE0A40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7471022614946C0A05484E3</key>
+		<key>4F3054F5A79741DF82E77A30</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E2617DC0424144BF996D0348</key>
+		<key>631753BD89D440DE84930E91</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E6648735676C45298966D6C4</key>
+		<key>9FF987B6394444AABD392DE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A758181D5D374934BFE2E1A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D042906922134DBB8D2D6899</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EEEACD94A11742B3B38DF3F4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

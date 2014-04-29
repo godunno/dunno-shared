@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "dunno-shared"
-  s.version      = "1.4.5"
+  s.version      = "0.5"
   s.summary      = 'Common classes to iPad and iPhone module'
   s.homepage     = "https://github.com/godunno/dunno-shared"
   s.license      = 'MIT'
@@ -22,6 +22,8 @@ Pod::Spec.new do |s|
 
   s.dependency 'ISO8601DateFormatter'
   s.dependency 'NSDate+Calendar'
+  s.dependency 'NSString+Ruby'
+  s.dependency 'ObjectiveSugar'
 
   s.dependency 'HexColors'
 

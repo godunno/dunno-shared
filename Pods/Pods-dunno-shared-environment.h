@@ -30,6 +30,18 @@
 #define COCOAPODS_VERSION_MINOR_NSDate_Calendar 0
 #define COCOAPODS_VERSION_PATCH_NSDate_Calendar 4
 
+// NSString+Ruby
+#define COCOAPODS_POD_AVAILABLE_NSString_Ruby
+#define COCOAPODS_VERSION_MAJOR_NSString_Ruby 1
+#define COCOAPODS_VERSION_MINOR_NSString_Ruby 1
+#define COCOAPODS_VERSION_PATCH_NSString_Ruby 0
+
+// ObjectiveSugar
+#define COCOAPODS_POD_AVAILABLE_ObjectiveSugar
+#define COCOAPODS_VERSION_MAJOR_ObjectiveSugar 1
+#define COCOAPODS_VERSION_MINOR_ObjectiveSugar 1
+#define COCOAPODS_VERSION_PATCH_ObjectiveSugar 0
+
 // SocketRocket
 #define COCOAPODS_POD_AVAILABLE_SocketRocket
 #define COCOAPODS_VERSION_MAJOR_SocketRocket 0
